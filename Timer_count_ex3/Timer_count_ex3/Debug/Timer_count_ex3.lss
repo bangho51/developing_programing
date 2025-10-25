@@ -1,0 +1,332 @@
+
+Timer_count_ex3.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000000  00800100  00800100  000001f2  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         0000019e  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  000001f2  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  00000224  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000040  00000000  00000000  00000260  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   00000a0a  00000000  00000000  000002a0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 0000087b  00000000  00000000  00000caa  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   000003e5  00000000  00000000  00001525  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000084  00000000  00000000  0000190c  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    00000462  00000000  00000000  00001990  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    000001e3  00000000  00000000  00001df2  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000030  00000000  00000000  00001fd5  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	4b c0       	rjmp	.+150    	; 0x9c <__bad_interrupt>
+   6:	00 00       	nop
+   8:	49 c0       	rjmp	.+146    	; 0x9c <__bad_interrupt>
+   a:	00 00       	nop
+   c:	47 c0       	rjmp	.+142    	; 0x9c <__bad_interrupt>
+   e:	00 00       	nop
+  10:	45 c0       	rjmp	.+138    	; 0x9c <__bad_interrupt>
+  12:	00 00       	nop
+  14:	43 c0       	rjmp	.+134    	; 0x9c <__bad_interrupt>
+  16:	00 00       	nop
+  18:	41 c0       	rjmp	.+130    	; 0x9c <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	3f c0       	rjmp	.+126    	; 0x9c <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	3d c0       	rjmp	.+122    	; 0x9c <__bad_interrupt>
+  22:	00 00       	nop
+  24:	3b c0       	rjmp	.+118    	; 0x9c <__bad_interrupt>
+  26:	00 00       	nop
+  28:	39 c0       	rjmp	.+114    	; 0x9c <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	37 c0       	rjmp	.+110    	; 0x9c <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	35 c0       	rjmp	.+106    	; 0x9c <__bad_interrupt>
+  32:	00 00       	nop
+  34:	33 c0       	rjmp	.+102    	; 0x9c <__bad_interrupt>
+  36:	00 00       	nop
+  38:	31 c0       	rjmp	.+98     	; 0x9c <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	2f c0       	rjmp	.+94     	; 0x9c <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	2d c0       	rjmp	.+90     	; 0x9c <__bad_interrupt>
+  42:	00 00       	nop
+  44:	2b c0       	rjmp	.+86     	; 0x9c <__bad_interrupt>
+  46:	00 00       	nop
+  48:	29 c0       	rjmp	.+82     	; 0x9c <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	27 c0       	rjmp	.+78     	; 0x9c <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	25 c0       	rjmp	.+74     	; 0x9c <__bad_interrupt>
+  52:	00 00       	nop
+  54:	23 c0       	rjmp	.+70     	; 0x9c <__bad_interrupt>
+  56:	00 00       	nop
+  58:	21 c0       	rjmp	.+66     	; 0x9c <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	1f c0       	rjmp	.+62     	; 0x9c <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	1d c0       	rjmp	.+58     	; 0x9c <__bad_interrupt>
+  62:	00 00       	nop
+  64:	1b c0       	rjmp	.+54     	; 0x9c <__bad_interrupt>
+  66:	00 00       	nop
+  68:	19 c0       	rjmp	.+50     	; 0x9c <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	17 c0       	rjmp	.+46     	; 0x9c <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	15 c0       	rjmp	.+42     	; 0x9c <__bad_interrupt>
+  72:	00 00       	nop
+  74:	13 c0       	rjmp	.+38     	; 0x9c <__bad_interrupt>
+  76:	00 00       	nop
+  78:	11 c0       	rjmp	.+34     	; 0x9c <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	0f c0       	rjmp	.+30     	; 0x9c <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	0d c0       	rjmp	.+26     	; 0x9c <__bad_interrupt>
+  82:	00 00       	nop
+  84:	0b c0       	rjmp	.+22     	; 0x9c <__bad_interrupt>
+  86:	00 00       	nop
+  88:	09 c0       	rjmp	.+18     	; 0x9c <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+  98:	79 d0       	rcall	.+242    	; 0x18c <main>
+  9a:	7f c0       	rjmp	.+254    	; 0x19a <_exit>
+
+0000009c <__bad_interrupt>:
+  9c:	b1 cf       	rjmp	.-158    	; 0x0 <__vectors>
+
+0000009e <init_OC0>:
+#include <avr/interrupt.h>
+#include <util/delay.h>
+
+void init_OC0(void)
+{
+	DDRB = 0x10; // PB4(OC0) 출력으로 설정
+  9e:	80 e1       	ldi	r24, 0x10	; 16
+  a0:	87 bb       	out	0x17, r24	; 23
+  a2:	08 95       	ret
+
+000000a4 <init_timer0_fastPWM>:
+}
+
+void init_timer0_fastPWM(int prescaler, unsigned char ocr)
+{
+	sei();
+  a4:	78 94       	sei
+	// TCCR0 = FOC0 | WGM00 | COM01 | COM00 | WGM01 | CS02 | CS01 | CS00
+	TCCR0 = 0b01101000; // fast PWM mode, Clear OC0 on compare match
+  a6:	28 e6       	ldi	r18, 0x68	; 104
+  a8:	23 bf       	out	0x33, r18	; 51
+	if(prescaler == 1) TCCR0 |= 1; // OC0 PWM 주파수 = F_CPU/(prescaler*256)
+  aa:	81 30       	cpi	r24, 0x01	; 1
+  ac:	91 05       	cpc	r25, r1
+  ae:	19 f4       	brne	.+6      	; 0xb6 <init_timer0_fastPWM+0x12>
+  b0:	23 b7       	in	r18, 0x33	; 51
+  b2:	21 60       	ori	r18, 0x01	; 1
+  b4:	23 bf       	out	0x33, r18	; 51
+	if(prescaler == 8) TCCR0 |= 2;
+  b6:	88 30       	cpi	r24, 0x08	; 8
+  b8:	91 05       	cpc	r25, r1
+  ba:	19 f4       	brne	.+6      	; 0xc2 <init_timer0_fastPWM+0x1e>
+  bc:	23 b7       	in	r18, 0x33	; 51
+  be:	22 60       	ori	r18, 0x02	; 2
+  c0:	23 bf       	out	0x33, r18	; 51
+	if(prescaler == 32) TCCR0 |= 3;
+  c2:	80 32       	cpi	r24, 0x20	; 32
+  c4:	91 05       	cpc	r25, r1
+  c6:	19 f4       	brne	.+6      	; 0xce <init_timer0_fastPWM+0x2a>
+  c8:	23 b7       	in	r18, 0x33	; 51
+  ca:	23 60       	ori	r18, 0x03	; 3
+  cc:	23 bf       	out	0x33, r18	; 51
+	if(prescaler == 64) TCCR0 |= 4;
+  ce:	80 34       	cpi	r24, 0x40	; 64
+  d0:	91 05       	cpc	r25, r1
+  d2:	19 f4       	brne	.+6      	; 0xda <init_timer0_fastPWM+0x36>
+  d4:	23 b7       	in	r18, 0x33	; 51
+  d6:	24 60       	ori	r18, 0x04	; 4
+  d8:	23 bf       	out	0x33, r18	; 51
+	if(prescaler == 128) TCCR0 |= 5;
+  da:	80 38       	cpi	r24, 0x80	; 128
+  dc:	91 05       	cpc	r25, r1
+  de:	19 f4       	brne	.+6      	; 0xe6 <init_timer0_fastPWM+0x42>
+  e0:	23 b7       	in	r18, 0x33	; 51
+  e2:	25 60       	ori	r18, 0x05	; 5
+  e4:	23 bf       	out	0x33, r18	; 51
+	if(prescaler == 256) TCCR0 |= 6;
+  e6:	81 15       	cp	r24, r1
+  e8:	21 e0       	ldi	r18, 0x01	; 1
+  ea:	92 07       	cpc	r25, r18
+  ec:	19 f4       	brne	.+6      	; 0xf4 <init_timer0_fastPWM+0x50>
+  ee:	23 b7       	in	r18, 0x33	; 51
+  f0:	26 60       	ori	r18, 0x06	; 6
+  f2:	23 bf       	out	0x33, r18	; 51
+	if(prescaler == 1024) TCCR0 |= 7;
+  f4:	81 15       	cp	r24, r1
+  f6:	94 40       	sbci	r25, 0x04	; 4
+  f8:	19 f4       	brne	.+6      	; 0x100 <init_timer0_fastPWM+0x5c>
+  fa:	83 b7       	in	r24, 0x33	; 51
+  fc:	87 60       	ori	r24, 0x07	; 7
+  fe:	83 bf       	out	0x33, r24	; 51
+	OCR0 = ocr; // 듀티비 50%
+ 100:	61 bf       	out	0x31, r22	; 49
+ 102:	08 95       	ret
+
+00000104 <OC0_0>:
+}
+
+void OC0_0(void) // 소리 안나게 하기
+{
+	TCCR0 = 0;
+ 104:	13 be       	out	0x33, r1	; 51
+	PORTB = 0;
+ 106:	18 ba       	out	0x18, r1	; 24
+ 108:	08 95       	ret
+
+0000010a <phone_bell>:
+}
+
+void phone_bell(int count)
+{
+ 10a:	ef 92       	push	r14
+ 10c:	ff 92       	push	r15
+ 10e:	0f 93       	push	r16
+ 110:	1f 93       	push	r17
+ 112:	cf 93       	push	r28
+ 114:	df 93       	push	r29
+ 116:	7c 01       	movw	r14, r24
+	int i,j;
+	for(j=0; j<count; j++)
+ 118:	00 e0       	ldi	r16, 0x00	; 0
+ 11a:	10 e0       	ldi	r17, 0x00	; 0
+ 11c:	2d c0       	rjmp	.+90     	; 0x178 <phone_bell+0x6e>
+	{
+		for(i=0; i<10; i++)
+		{
+			init_timer0_fastPWM(128,128); // 488Hz sound, 듀티비 약 50%
+ 11e:	60 e8       	ldi	r22, 0x80	; 128
+ 120:	80 e8       	ldi	r24, 0x80	; 128
+ 122:	90 e0       	ldi	r25, 0x00	; 0
+ 124:	bf df       	rcall	.-130    	; 0xa4 <init_timer0_fastPWM>
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 126:	2f e7       	ldi	r18, 0x7F	; 127
+ 128:	88 e3       	ldi	r24, 0x38	; 56
+ 12a:	91 e0       	ldi	r25, 0x01	; 1
+ 12c:	21 50       	subi	r18, 0x01	; 1
+ 12e:	80 40       	sbci	r24, 0x00	; 0
+ 130:	90 40       	sbci	r25, 0x00	; 0
+ 132:	e1 f7       	brne	.-8      	; 0x12c <phone_bell+0x22>
+ 134:	00 c0       	rjmp	.+0      	; 0x136 <phone_bell+0x2c>
+ 136:	00 00       	nop
+			_delay_ms(25);
+			init_timer0_fastPWM(256,128); // 244Hz sound, 듀티비 약 50%
+ 138:	60 e8       	ldi	r22, 0x80	; 128
+ 13a:	80 e0       	ldi	r24, 0x00	; 0
+ 13c:	91 e0       	ldi	r25, 0x01	; 1
+ 13e:	b2 df       	rcall	.-156    	; 0xa4 <init_timer0_fastPWM>
+ 140:	2f e7       	ldi	r18, 0x7F	; 127
+ 142:	88 e3       	ldi	r24, 0x38	; 56
+ 144:	91 e0       	ldi	r25, 0x01	; 1
+ 146:	21 50       	subi	r18, 0x01	; 1
+ 148:	80 40       	sbci	r24, 0x00	; 0
+ 14a:	90 40       	sbci	r25, 0x00	; 0
+ 14c:	e1 f7       	brne	.-8      	; 0x146 <phone_bell+0x3c>
+ 14e:	00 c0       	rjmp	.+0      	; 0x150 <phone_bell+0x46>
+ 150:	00 00       	nop
+void phone_bell(int count)
+{
+	int i,j;
+	for(j=0; j<count; j++)
+	{
+		for(i=0; i<10; i++)
+ 152:	21 96       	adiw	r28, 0x01	; 1
+ 154:	02 c0       	rjmp	.+4      	; 0x15a <phone_bell+0x50>
+ 156:	c0 e0       	ldi	r28, 0x00	; 0
+ 158:	d0 e0       	ldi	r29, 0x00	; 0
+ 15a:	ca 30       	cpi	r28, 0x0A	; 10
+ 15c:	d1 05       	cpc	r29, r1
+			init_timer0_fastPWM(128,128); // 488Hz sound, 듀티비 약 50%
+			_delay_ms(25);
+			init_timer0_fastPWM(256,128); // 244Hz sound, 듀티비 약 50%
+			_delay_ms(25);
+		}
+		OC0_0();
+ 15e:	fc f2       	brlt	.-66     	; 0x11e <phone_bell+0x14>
+ 160:	d1 df       	rcall	.-94     	; 0x104 <OC0_0>
+ 162:	2f ef       	ldi	r18, 0xFF	; 255
+ 164:	87 ea       	ldi	r24, 0xA7	; 167
+ 166:	91 e6       	ldi	r25, 0x61	; 97
+ 168:	21 50       	subi	r18, 0x01	; 1
+ 16a:	80 40       	sbci	r24, 0x00	; 0
+ 16c:	90 40       	sbci	r25, 0x00	; 0
+ 16e:	e1 f7       	brne	.-8      	; 0x168 <phone_bell+0x5e>
+ 170:	00 c0       	rjmp	.+0      	; 0x172 <phone_bell+0x68>
+ 172:	00 00       	nop
+}
+
+void phone_bell(int count)
+{
+	int i,j;
+	for(j=0; j<count; j++)
+ 174:	0f 5f       	subi	r16, 0xFF	; 255
+ 176:	1f 4f       	sbci	r17, 0xFF	; 255
+ 178:	0e 15       	cp	r16, r14
+ 17a:	1f 05       	cpc	r17, r15
+ 17c:	64 f3       	brlt	.-40     	; 0x156 <phone_bell+0x4c>
+			_delay_ms(25);
+		}
+		OC0_0();
+		_delay_ms(2000);
+	}
+}
+ 17e:	df 91       	pop	r29
+ 180:	cf 91       	pop	r28
+ 182:	1f 91       	pop	r17
+ 184:	0f 91       	pop	r16
+ 186:	ff 90       	pop	r15
+ 188:	ef 90       	pop	r14
+ 18a:	08 95       	ret
+
+0000018c <main>:
+
+int main(void)
+{
+	init_OC0(); // PB4(OC0) 출력으로 설정
+ 18c:	88 df       	rcall	.-240    	; 0x9e <init_OC0>
+	phone_bell(3); // 벨 소리 3번 내기
+ 18e:	83 e0       	ldi	r24, 0x03	; 3
+ 190:	90 e0       	ldi	r25, 0x00	; 0
+ 192:	bb df       	rcall	.-138    	; 0x10a <phone_bell>
+ 194:	80 e0       	ldi	r24, 0x00	; 0
+ 196:	90 e0       	ldi	r25, 0x00	; 0
+ 198:	08 95       	ret
+
+0000019a <_exit>:
+ 19a:	f8 94       	cli
+
+0000019c <__stop_program>:
+ 19c:	ff cf       	rjmp	.-2      	; 0x19c <__stop_program>

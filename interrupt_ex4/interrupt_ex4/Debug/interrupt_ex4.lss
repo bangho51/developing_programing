@@ -1,0 +1,289 @@
+
+interrupt_ex4.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000002  00800100  0000017c  00000210  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         0000017c  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          00000001  00800102  00800102  00000212  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  00000212  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  00000244  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 00000070  00000000  00000000  00000280  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   00000be3  00000000  00000000  000002f0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 000009e7  00000000  00000000  00000ed3  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   0000053e  00000000  00000000  000018ba  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  000000e8  00000000  00000000  00001df8  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    000004af  00000000  00000000  00001ee0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    0000032b  00000000  00000000  0000238f  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 00000050  00000000  00000000  000026ba  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	60 c0       	rjmp	.+192    	; 0xc6 <__bad_interrupt>
+   6:	00 00       	nop
+   8:	5e c0       	rjmp	.+188    	; 0xc6 <__bad_interrupt>
+   a:	00 00       	nop
+   c:	5c c0       	rjmp	.+184    	; 0xc6 <__bad_interrupt>
+   e:	00 00       	nop
+  10:	5a c0       	rjmp	.+180    	; 0xc6 <__bad_interrupt>
+  12:	00 00       	nop
+  14:	82 c0       	rjmp	.+260    	; 0x11a <__vector_5>
+  16:	00 00       	nop
+  18:	56 c0       	rjmp	.+172    	; 0xc6 <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	54 c0       	rjmp	.+168    	; 0xc6 <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	52 c0       	rjmp	.+164    	; 0xc6 <__bad_interrupt>
+  22:	00 00       	nop
+  24:	50 c0       	rjmp	.+160    	; 0xc6 <__bad_interrupt>
+  26:	00 00       	nop
+  28:	4e c0       	rjmp	.+156    	; 0xc6 <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	4c c0       	rjmp	.+152    	; 0xc6 <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	4a c0       	rjmp	.+148    	; 0xc6 <__bad_interrupt>
+  32:	00 00       	nop
+  34:	48 c0       	rjmp	.+144    	; 0xc6 <__bad_interrupt>
+  36:	00 00       	nop
+  38:	46 c0       	rjmp	.+140    	; 0xc6 <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	44 c0       	rjmp	.+136    	; 0xc6 <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	42 c0       	rjmp	.+132    	; 0xc6 <__bad_interrupt>
+  42:	00 00       	nop
+  44:	40 c0       	rjmp	.+128    	; 0xc6 <__bad_interrupt>
+  46:	00 00       	nop
+  48:	3e c0       	rjmp	.+124    	; 0xc6 <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	3c c0       	rjmp	.+120    	; 0xc6 <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	3a c0       	rjmp	.+116    	; 0xc6 <__bad_interrupt>
+  52:	00 00       	nop
+  54:	38 c0       	rjmp	.+112    	; 0xc6 <__bad_interrupt>
+  56:	00 00       	nop
+  58:	36 c0       	rjmp	.+108    	; 0xc6 <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	34 c0       	rjmp	.+104    	; 0xc6 <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	32 c0       	rjmp	.+100    	; 0xc6 <__bad_interrupt>
+  62:	00 00       	nop
+  64:	30 c0       	rjmp	.+96     	; 0xc6 <__bad_interrupt>
+  66:	00 00       	nop
+  68:	2e c0       	rjmp	.+92     	; 0xc6 <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	2c c0       	rjmp	.+88     	; 0xc6 <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	2a c0       	rjmp	.+84     	; 0xc6 <__bad_interrupt>
+  72:	00 00       	nop
+  74:	28 c0       	rjmp	.+80     	; 0xc6 <__bad_interrupt>
+  76:	00 00       	nop
+  78:	26 c0       	rjmp	.+76     	; 0xc6 <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	24 c0       	rjmp	.+72     	; 0xc6 <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	22 c0       	rjmp	.+68     	; 0xc6 <__bad_interrupt>
+  82:	00 00       	nop
+  84:	20 c0       	rjmp	.+64     	; 0xc6 <__bad_interrupt>
+  86:	00 00       	nop
+  88:	1e c0       	rjmp	.+60     	; 0xc6 <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+
+00000098 <__do_copy_data>:
+  98:	11 e0       	ldi	r17, 0x01	; 1
+  9a:	a0 e0       	ldi	r26, 0x00	; 0
+  9c:	b1 e0       	ldi	r27, 0x01	; 1
+  9e:	ec e7       	ldi	r30, 0x7C	; 124
+  a0:	f1 e0       	ldi	r31, 0x01	; 1
+  a2:	00 e0       	ldi	r16, 0x00	; 0
+  a4:	0b bf       	out	0x3b, r16	; 59
+  a6:	02 c0       	rjmp	.+4      	; 0xac <__do_copy_data+0x14>
+  a8:	07 90       	elpm	r0, Z+
+  aa:	0d 92       	st	X+, r0
+  ac:	a2 30       	cpi	r26, 0x02	; 2
+  ae:	b1 07       	cpc	r27, r17
+  b0:	d9 f7       	brne	.-10     	; 0xa8 <__do_copy_data+0x10>
+
+000000b2 <__do_clear_bss>:
+  b2:	21 e0       	ldi	r18, 0x01	; 1
+  b4:	a2 e0       	ldi	r26, 0x02	; 2
+  b6:	b1 e0       	ldi	r27, 0x01	; 1
+  b8:	01 c0       	rjmp	.+2      	; 0xbc <.do_clear_bss_start>
+
+000000ba <.do_clear_bss_loop>:
+  ba:	1d 92       	st	X+, r1
+
+000000bc <.do_clear_bss_start>:
+  bc:	a3 30       	cpi	r26, 0x03	; 3
+  be:	b2 07       	cpc	r27, r18
+  c0:	e1 f7       	brne	.-8      	; 0xba <.do_clear_bss_loop>
+  c2:	54 d0       	rcall	.+168    	; 0x16c <main>
+  c4:	59 c0       	rjmp	.+178    	; 0x178 <_exit>
+
+000000c6 <__bad_interrupt>:
+  c6:	9c cf       	rjmp	.-200    	; 0x0 <__vectors>
+
+000000c8 <init_fnd>:
+			if(abs_number >= 10) abs_number /= 10; // 10으로 나누어 다음 자리 수로 이동
+			else break;
+		}
+		if(number < 0) fnd(i+1, fnd_minus); // 음수 부호
+	}
+}
+  c8:	8f ef       	ldi	r24, 0xFF	; 255
+  ca:	84 bb       	out	0x14, r24	; 20
+  cc:	8f e0       	ldi	r24, 0x0F	; 15
+  ce:	80 93 64 00 	sts	0x0064, r24	; 0x800064 <__TEXT_REGION_LENGTH__+0x7e0064>
+  d2:	15 ba       	out	0x15, r1	; 21
+  d4:	10 92 65 00 	sts	0x0065, r1	; 0x800065 <__TEXT_REGION_LENGTH__+0x7e0065>
+  d8:	08 95       	ret
+
+000000da <fnd_running>:
+void fnd_running(unsigned char ith)
+{
+	static unsigned char on=1;
+	PORTG = 1 << ith;
+  da:	21 e0       	ldi	r18, 0x01	; 1
+  dc:	30 e0       	ldi	r19, 0x00	; 0
+  de:	02 c0       	rjmp	.+4      	; 0xe4 <fnd_running+0xa>
+  e0:	22 0f       	add	r18, r18
+  e2:	33 1f       	adc	r19, r19
+  e4:	8a 95       	dec	r24
+  e6:	e2 f7       	brpl	.-8      	; 0xe0 <fnd_running+0x6>
+  e8:	20 93 65 00 	sts	0x0065, r18	; 0x800065 <__TEXT_REGION_LENGTH__+0x7e0065>
+	PORTC = on;
+  ec:	80 91 00 01 	lds	r24, 0x0100	; 0x800100 <__DATA_REGION_ORIGIN__>
+  f0:	85 bb       	out	0x15, r24	; 21
+	on = on << 1;
+  f2:	80 91 00 01 	lds	r24, 0x0100	; 0x800100 <__DATA_REGION_ORIGIN__>
+  f6:	88 0f       	add	r24, r24
+  f8:	80 93 00 01 	sts	0x0100, r24	; 0x800100 <__DATA_REGION_ORIGIN__>
+	if(on == 0x40) on = 1;
+  fc:	80 34       	cpi	r24, 0x40	; 64
+  fe:	19 f4       	brne	.+6      	; 0x106 <fnd_running+0x2c>
+ 100:	81 e0       	ldi	r24, 0x01	; 1
+ 102:	80 93 00 01 	sts	0x0100, r24	; 0x800100 <__DATA_REGION_ORIGIN__>
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 106:	2f ef       	ldi	r18, 0xFF	; 255
+ 108:	81 ee       	ldi	r24, 0xE1	; 225
+ 10a:	94 e0       	ldi	r25, 0x04	; 4
+ 10c:	21 50       	subi	r18, 0x01	; 1
+ 10e:	80 40       	sbci	r24, 0x00	; 0
+ 110:	90 40       	sbci	r25, 0x00	; 0
+ 112:	e1 f7       	brne	.-8      	; 0x10c <fnd_running+0x32>
+ 114:	00 c0       	rjmp	.+0      	; 0x116 <fnd_running+0x3c>
+ 116:	00 00       	nop
+ 118:	08 95       	ret
+
+0000011a <__vector_5>:
+extern void init_fnd(void);
+
+unsigned char ith = 0;
+/* INT4 호출시 count를 1 증가 시키는 함수 */
+ISR(INT4_vect)
+{
+ 11a:	1f 92       	push	r1
+ 11c:	0f 92       	push	r0
+ 11e:	0f b6       	in	r0, 0x3f	; 63
+ 120:	0f 92       	push	r0
+ 122:	11 24       	eor	r1, r1
+ 124:	8f 93       	push	r24
+ 126:	9f 93       	push	r25
+	cli(); // Global Interrupt Disable
+ 128:	f8 94       	cli
+ 12a:	8f e3       	ldi	r24, 0x3F	; 63
+ 12c:	9c e9       	ldi	r25, 0x9C	; 156
+ 12e:	01 97       	sbiw	r24, 0x01	; 1
+ 130:	f1 f7       	brne	.-4      	; 0x12e <__vector_5+0x14>
+ 132:	00 c0       	rjmp	.+0      	; 0x134 <__vector_5+0x1a>
+ 134:	00 00       	nop
+	_delay_ms(10); // 디바운싱 처리
+	ith = ith + 1;
+ 136:	80 91 02 01 	lds	r24, 0x0102	; 0x800102 <__data_end>
+ 13a:	8f 5f       	subi	r24, 0xFF	; 255
+ 13c:	80 93 02 01 	sts	0x0102, r24	; 0x800102 <__data_end>
+	if(ith == 4) ith = 0;
+ 140:	84 30       	cpi	r24, 0x04	; 4
+ 142:	11 f4       	brne	.+4      	; 0x148 <__vector_5+0x2e>
+ 144:	10 92 02 01 	sts	0x0102, r1	; 0x800102 <__data_end>
+	sei(); // Global Interrupt Enable
+ 148:	78 94       	sei
+}
+ 14a:	9f 91       	pop	r25
+ 14c:	8f 91       	pop	r24
+ 14e:	0f 90       	pop	r0
+ 150:	0f be       	out	0x3f, r0	; 63
+ 152:	0f 90       	pop	r0
+ 154:	1f 90       	pop	r1
+ 156:	18 95       	reti
+
+00000158 <init_INT4>:
+
+/* Global interrupt와 PE4(INT4)를 활성화 시키고, PE4 입력이 하강에지(버튼이 눌림)일 때 INT4 발생시킴*/
+void init_INT4(void)
+{
+	DDRE &= ~(1 << PE4); // PE4만 0으로 만듦 [PE4 : input], 내부 pull_up 저항에 연결되어 항상 1 입력
+ 158:	82 b1       	in	r24, 0x02	; 2
+ 15a:	8f 7e       	andi	r24, 0xEF	; 239
+ 15c:	82 b9       	out	0x02, r24	; 2
+
+	sei(); // Global Interrupt Enable
+ 15e:	78 94       	sei
+	EIMSK |= 1 << PE4; // Enable INT4
+ 160:	89 b7       	in	r24, 0x39	; 57
+ 162:	80 61       	ori	r24, 0x10	; 16
+ 164:	89 bf       	out	0x39, r24	; 57
+	EICRB = 0b00000010; // 11(rising edge), 10(falling edge), 01(reserved), 00(low level)
+ 166:	82 e0       	ldi	r24, 0x02	; 2
+ 168:	8a bf       	out	0x3a, r24	; 58
+ 16a:	08 95       	ret
+
+0000016c <main>:
+}
+
+int main(void)
+{
+	init_fnd();
+ 16c:	ad df       	rcall	.-166    	; 0xc8 <init_fnd>
+	init_INT4();
+ 16e:	f4 df       	rcall	.-24     	; 0x158 <init_INT4>
+ 170:	80 91 02 01 	lds	r24, 0x0102	; 0x800102 <__data_end>
+	while(1)
+	{
+		fnd_running(ith);
+ 174:	b2 df       	rcall	.-156    	; 0xda <fnd_running>
+ 176:	fc cf       	rjmp	.-8      	; 0x170 <main+0x4>
+
+00000178 <_exit>:
+ 178:	f8 94       	cli
+
+0000017a <__stop_program>:
+ 17a:	ff cf       	rjmp	.-2      	; 0x17a <__stop_program>

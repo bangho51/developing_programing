@@ -1,0 +1,450 @@
+
+ADC_ex3.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000012  00800100  00000242  000002d6  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         00000242  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          00000002  00800112  00800112  000002e8  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  000002e8  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  00000318  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 00000068  00000000  00000000  00000354  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   00000b0c  00000000  00000000  000003bc  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 00000956  00000000  00000000  00000ec8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   00000465  00000000  00000000  0000181e  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  000000d8  00000000  00000000  00001c84  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    000004ab  00000000  00000000  00001d5c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    0000027a  00000000  00000000  00002207  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 00000048  00000000  00000000  00002481  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	60 c0       	rjmp	.+192    	; 0xc6 <__bad_interrupt>
+   6:	00 00       	nop
+   8:	5e c0       	rjmp	.+188    	; 0xc6 <__bad_interrupt>
+   a:	00 00       	nop
+   c:	5c c0       	rjmp	.+184    	; 0xc6 <__bad_interrupt>
+   e:	00 00       	nop
+  10:	5a c0       	rjmp	.+180    	; 0xc6 <__bad_interrupt>
+  12:	00 00       	nop
+  14:	58 c0       	rjmp	.+176    	; 0xc6 <__bad_interrupt>
+  16:	00 00       	nop
+  18:	56 c0       	rjmp	.+172    	; 0xc6 <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	54 c0       	rjmp	.+168    	; 0xc6 <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	52 c0       	rjmp	.+164    	; 0xc6 <__bad_interrupt>
+  22:	00 00       	nop
+  24:	50 c0       	rjmp	.+160    	; 0xc6 <__bad_interrupt>
+  26:	00 00       	nop
+  28:	4e c0       	rjmp	.+156    	; 0xc6 <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	4c c0       	rjmp	.+152    	; 0xc6 <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	4a c0       	rjmp	.+148    	; 0xc6 <__bad_interrupt>
+  32:	00 00       	nop
+  34:	48 c0       	rjmp	.+144    	; 0xc6 <__bad_interrupt>
+  36:	00 00       	nop
+  38:	46 c0       	rjmp	.+140    	; 0xc6 <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	44 c0       	rjmp	.+136    	; 0xc6 <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	42 c0       	rjmp	.+132    	; 0xc6 <__bad_interrupt>
+  42:	00 00       	nop
+  44:	40 c0       	rjmp	.+128    	; 0xc6 <__bad_interrupt>
+  46:	00 00       	nop
+  48:	3e c0       	rjmp	.+124    	; 0xc6 <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	3c c0       	rjmp	.+120    	; 0xc6 <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	3a c0       	rjmp	.+116    	; 0xc6 <__bad_interrupt>
+  52:	00 00       	nop
+  54:	39 c0       	rjmp	.+114    	; 0xc8 <__vector_21>
+  56:	00 00       	nop
+  58:	36 c0       	rjmp	.+108    	; 0xc6 <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	34 c0       	rjmp	.+104    	; 0xc6 <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	32 c0       	rjmp	.+100    	; 0xc6 <__bad_interrupt>
+  62:	00 00       	nop
+  64:	30 c0       	rjmp	.+96     	; 0xc6 <__bad_interrupt>
+  66:	00 00       	nop
+  68:	2e c0       	rjmp	.+92     	; 0xc6 <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	2c c0       	rjmp	.+88     	; 0xc6 <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	2a c0       	rjmp	.+84     	; 0xc6 <__bad_interrupt>
+  72:	00 00       	nop
+  74:	28 c0       	rjmp	.+80     	; 0xc6 <__bad_interrupt>
+  76:	00 00       	nop
+  78:	26 c0       	rjmp	.+76     	; 0xc6 <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	24 c0       	rjmp	.+72     	; 0xc6 <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	22 c0       	rjmp	.+68     	; 0xc6 <__bad_interrupt>
+  82:	00 00       	nop
+  84:	20 c0       	rjmp	.+64     	; 0xc6 <__bad_interrupt>
+  86:	00 00       	nop
+  88:	1e c0       	rjmp	.+60     	; 0xc6 <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+
+00000098 <__do_copy_data>:
+  98:	11 e0       	ldi	r17, 0x01	; 1
+  9a:	a0 e0       	ldi	r26, 0x00	; 0
+  9c:	b1 e0       	ldi	r27, 0x01	; 1
+  9e:	e2 e4       	ldi	r30, 0x42	; 66
+  a0:	f2 e0       	ldi	r31, 0x02	; 2
+  a2:	00 e0       	ldi	r16, 0x00	; 0
+  a4:	0b bf       	out	0x3b, r16	; 59
+  a6:	02 c0       	rjmp	.+4      	; 0xac <__do_copy_data+0x14>
+  a8:	07 90       	elpm	r0, Z+
+  aa:	0d 92       	st	X+, r0
+  ac:	a2 31       	cpi	r26, 0x12	; 18
+  ae:	b1 07       	cpc	r27, r17
+  b0:	d9 f7       	brne	.-10     	; 0xa8 <__do_copy_data+0x10>
+
+000000b2 <__do_clear_bss>:
+  b2:	21 e0       	ldi	r18, 0x01	; 1
+  b4:	a2 e1       	ldi	r26, 0x12	; 18
+  b6:	b1 e0       	ldi	r27, 0x01	; 1
+  b8:	01 c0       	rjmp	.+2      	; 0xbc <.do_clear_bss_start>
+
+000000ba <.do_clear_bss_loop>:
+  ba:	1d 92       	st	X+, r1
+
+000000bc <.do_clear_bss_start>:
+  bc:	a4 31       	cpi	r26, 0x14	; 20
+  be:	b2 07       	cpc	r27, r18
+  c0:	e1 f7       	brne	.-8      	; 0xba <.do_clear_bss_loop>
+  c2:	1e d0       	rcall	.+60     	; 0x100 <main>
+  c4:	bc c0       	rjmp	.+376    	; 0x23e <_exit>
+
+000000c6 <__bad_interrupt>:
+  c6:	9c cf       	rjmp	.-200    	; 0x0 <__vectors>
+
+000000c8 <__vector_21>:
+int c_adc;
+unsigned char adc_ch=0;
+
+// ADC interrupt service routine
+ISR(ADC_vect)
+{
+  c8:	1f 92       	push	r1
+  ca:	0f 92       	push	r0
+  cc:	0f b6       	in	r0, 0x3f	; 63
+  ce:	0f 92       	push	r0
+  d0:	11 24       	eor	r1, r1
+  d2:	8f 93       	push	r24
+  d4:	9f 93       	push	r25
+	c_adc = ADC;
+  d6:	84 b1       	in	r24, 0x04	; 4
+  d8:	95 b1       	in	r25, 0x05	; 5
+  da:	90 93 13 01 	sts	0x0113, r25	; 0x800113 <__data_end+0x1>
+  de:	80 93 12 01 	sts	0x0112, r24	; 0x800112 <__data_end>
+	ADCSRA|=(1<<ADSC);
+  e2:	86 b1       	in	r24, 0x06	; 6
+  e4:	80 64       	ori	r24, 0x40	; 64
+  e6:	86 b9       	out	0x06, r24	; 6
+}
+  e8:	9f 91       	pop	r25
+  ea:	8f 91       	pop	r24
+  ec:	0f 90       	pop	r0
+  ee:	0f be       	out	0x3f, r0	; 63
+  f0:	0f 90       	pop	r0
+  f2:	1f 90       	pop	r1
+  f4:	18 95       	reti
+
+000000f6 <init_ADC_interrupt>:
+
+void init_ADC_interrupt(void)
+{
+	sei();
+  f6:	78 94       	sei
+	ADMUX = 0; // Single ended input channel 0
+  f8:	17 b8       	out	0x07, r1	; 7
+	ADCSRA = 0b11001111; // ADC enable, ADC Start Conversion, ADC Interrupt Enable, 125kHz
+  fa:	8f ec       	ldi	r24, 0xCF	; 207
+  fc:	86 b9       	out	0x06, r24	; 6
+  fe:	08 95       	ret
+
+00000100 <main>:
+}
+
+int main(void)
+{
+	init_ADC_interrupt();
+ 100:	fa df       	rcall	.-12     	; 0xf6 <init_ADC_interrupt>
+	init_fnd();
+ 102:	06 d0       	rcall	.+12     	; 0x110 <init_fnd>
+ 104:	80 91 12 01 	lds	r24, 0x0112	; 0x800112 <__data_end>
+	while(1)
+	{
+		fnd_number(c_adc);
+ 108:	90 91 13 01 	lds	r25, 0x0113	; 0x800113 <__data_end+0x1>
+ 10c:	36 d0       	rcall	.+108    	; 0x17a <fnd_number>
+ 10e:	fa cf       	rjmp	.-12     	; 0x104 <main+0x4>
+
+00000110 <init_fnd>:
+ 110:	8f ef       	ldi	r24, 0xFF	; 255
+unsigned char fnd_digit[] = {0x3f, 0x06, 0x5b, 0x4f, 0x66, 0x6d, 0x7d, 0x07, 0x7f, 0x6f, 0x77, 0x7c, 0x39, 0x5e, 0x79, 0x71}; // common cathode FND 0-F
+unsigned char fnd_minus = 0x40;
+unsigned char fnd_dp = 0x80;
+void init_fnd(void)
+{
+	DDRC = 0xff; // PC 출력 fnd display, 1:ON, 0:OFF
+ 112:	84 bb       	out	0x14, r24	; 20
+	DDRG = 0x0f; // 4개의 fnd 중, 1:선택, 0:선택 안함
+ 114:	8f e0       	ldi	r24, 0x0F	; 15
+ 116:	80 93 64 00 	sts	0x0064, r24	; 0x800064 <__TEXT_REGION_LENGTH__+0x7e0064>
+	PORTC = 0; // fnd 모두 꺼짐
+ 11a:	15 ba       	out	0x15, r1	; 21
+	PORTG = 0; // fnd 선택 없음
+ 11c:	10 92 65 00 	sts	0x0065, r1	; 0x800065 <__TEXT_REGION_LENGTH__+0x7e0065>
+ 120:	08 95       	ret
+
+00000122 <fnd>:
+}
+
+void fnd(int ith, int digit)
+{
+	PORTG = 1 << ith; // fnd 선택
+ 122:	21 e0       	ldi	r18, 0x01	; 1
+ 124:	30 e0       	ldi	r19, 0x00	; 0
+ 126:	02 c0       	rjmp	.+4      	; 0x12c <fnd+0xa>
+ 128:	22 0f       	add	r18, r18
+ 12a:	33 1f       	adc	r19, r19
+ 12c:	8a 95       	dec	r24
+ 12e:	e2 f7       	brpl	.-8      	; 0x128 <fnd+0x6>
+ 130:	20 93 65 00 	sts	0x0065, r18	; 0x800065 <__TEXT_REGION_LENGTH__+0x7e0065>
+	if(digit >= 0 && digit < 16) PORTC = fnd_digit[digit]; // 16진수 표시
+ 134:	60 31       	cpi	r22, 0x10	; 16
+ 136:	71 05       	cpc	r23, r1
+ 138:	30 f4       	brcc	.+12     	; 0x146 <fnd+0x24>
+ 13a:	fb 01       	movw	r30, r22
+ 13c:	ef 5f       	subi	r30, 0xFF	; 255
+ 13e:	fe 4f       	sbci	r31, 0xFE	; 254
+ 140:	80 81       	ld	r24, Z
+ 142:	85 bb       	out	0x15, r24	; 21
+ 144:	03 c0       	rjmp	.+6      	; 0x14c <fnd+0x2a>
+	else PORTC = fnd_minus;
+ 146:	80 91 00 01 	lds	r24, 0x0100	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 14a:	85 bb       	out	0x15, r24	; 21
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 14c:	8f e3       	ldi	r24, 0x3F	; 63
+ 14e:	9f e1       	ldi	r25, 0x1F	; 31
+ 150:	01 97       	sbiw	r24, 0x01	; 1
+ 152:	f1 f7       	brne	.-4      	; 0x150 <fnd+0x2e>
+ 154:	00 c0       	rjmp	.+0      	; 0x156 <fnd+0x34>
+ 156:	00 00       	nop
+ 158:	08 95       	ret
+
+0000015a <fnd_overflow>:
+	_delay_ms(FND_DELAY);
+}
+
+void fnd_overflow(void) // 표현 불가 표시하기
+{
+ 15a:	cf 93       	push	r28
+ 15c:	df 93       	push	r29
+	int i;
+	for(i=0; i<4; i++)
+ 15e:	c0 e0       	ldi	r28, 0x00	; 0
+ 160:	d0 e0       	ldi	r29, 0x00	; 0
+ 162:	05 c0       	rjmp	.+10     	; 0x16e <fnd_overflow+0x14>
+	fnd(i, -1);
+ 164:	6f ef       	ldi	r22, 0xFF	; 255
+ 166:	7f ef       	ldi	r23, 0xFF	; 255
+ 168:	ce 01       	movw	r24, r28
+ 16a:	db df       	rcall	.-74     	; 0x122 <fnd>
+}
+
+void fnd_overflow(void) // 표현 불가 표시하기
+{
+	int i;
+	for(i=0; i<4; i++)
+ 16c:	21 96       	adiw	r28, 0x01	; 1
+ 16e:	c4 30       	cpi	r28, 0x04	; 4
+ 170:	d1 05       	cpc	r29, r1
+ 172:	c4 f3       	brlt	.-16     	; 0x164 <fnd_overflow+0xa>
+	fnd(i, -1);
+}
+ 174:	df 91       	pop	r29
+ 176:	cf 91       	pop	r28
+ 178:	08 95       	ret
+
+0000017a <fnd_number>:
+
+void fnd_number(int number)
+{
+ 17a:	ef 92       	push	r14
+ 17c:	ff 92       	push	r15
+ 17e:	0f 93       	push	r16
+ 180:	1f 93       	push	r17
+ 182:	cf 93       	push	r28
+ 184:	df 93       	push	r29
+ 186:	7c 01       	movw	r14, r24
+	int abs_number, n, i;
+	if(number < -999 || number > 9999)
+ 188:	89 51       	subi	r24, 0x19	; 25
+ 18a:	9c 4f       	sbci	r25, 0xFC	; 252
+ 18c:	87 3f       	cpi	r24, 0xF7	; 247
+ 18e:	9a 42       	sbci	r25, 0x2A	; 42
+ 190:	10 f0       	brcs	.+4      	; 0x196 <fnd_number+0x1c>
+	{
+		fnd_overflow(); // 숫자 표현 범위를 넘어감
+ 192:	e3 df       	rcall	.-58     	; 0x15a <fnd_overflow>
+ 194:	26 c0       	rjmp	.+76     	; 0x1e2 <fnd_number+0x68>
+	}
+	else
+	{
+		abs_number = absolute(number);
+ 196:	e7 01       	movw	r28, r14
+ 198:	ff 20       	and	r15, r15
+ 19a:	24 f4       	brge	.+8      	; 0x1a4 <fnd_number+0x2a>
+ 19c:	cc 27       	eor	r28, r28
+ 19e:	dd 27       	eor	r29, r29
+ 1a0:	ce 19       	sub	r28, r14
+ 1a2:	df 09       	sbc	r29, r15
+		for(i=0; i<4; i++)
+ 1a4:	00 e0       	ldi	r16, 0x00	; 0
+ 1a6:	10 e0       	ldi	r17, 0x00	; 0
+ 1a8:	11 c0       	rjmp	.+34     	; 0x1cc <fnd_number+0x52>
+		{
+			n = abs_number % 10; // 10으로 나눈 나머지 수
+ 1aa:	ce 01       	movw	r24, r28
+ 1ac:	6a e0       	ldi	r22, 0x0A	; 10
+ 1ae:	70 e0       	ldi	r23, 0x00	; 0
+ 1b0:	1f d0       	rcall	.+62     	; 0x1f0 <__divmodhi4>
+			fnd(i, n);
+ 1b2:	bc 01       	movw	r22, r24
+ 1b4:	c8 01       	movw	r24, r16
+ 1b6:	b5 df       	rcall	.-150    	; 0x122 <fnd>
+			if(abs_number >= 10) abs_number /= 10; // 10으로 나누어 다음 자리 수로 이동
+ 1b8:	ca 30       	cpi	r28, 0x0A	; 10
+ 1ba:	d1 05       	cpc	r29, r1
+ 1bc:	54 f0       	brlt	.+20     	; 0x1d2 <fnd_number+0x58>
+ 1be:	ce 01       	movw	r24, r28
+ 1c0:	6a e0       	ldi	r22, 0x0A	; 10
+ 1c2:	70 e0       	ldi	r23, 0x00	; 0
+ 1c4:	15 d0       	rcall	.+42     	; 0x1f0 <__divmodhi4>
+ 1c6:	eb 01       	movw	r28, r22
+		fnd_overflow(); // 숫자 표현 범위를 넘어감
+	}
+	else
+	{
+		abs_number = absolute(number);
+		for(i=0; i<4; i++)
+ 1c8:	0f 5f       	subi	r16, 0xFF	; 255
+ 1ca:	1f 4f       	sbci	r17, 0xFF	; 255
+ 1cc:	04 30       	cpi	r16, 0x04	; 4
+ 1ce:	11 05       	cpc	r17, r1
+ 1d0:	64 f3       	brlt	.-40     	; 0x1aa <fnd_number+0x30>
+			n = abs_number % 10; // 10으로 나눈 나머지 수
+			fnd(i, n);
+			if(abs_number >= 10) abs_number /= 10; // 10으로 나누어 다음 자리 수로 이동
+			else break;
+		}
+		if(number < 0) fnd(i+1, fnd_minus); // 음수 부호
+ 1d2:	ff 20       	and	r15, r15
+ 1d4:	34 f4       	brge	.+12     	; 0x1e2 <fnd_number+0x68>
+ 1d6:	60 91 00 01 	lds	r22, 0x0100	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 1da:	70 e0       	ldi	r23, 0x00	; 0
+ 1dc:	c8 01       	movw	r24, r16
+ 1de:	01 96       	adiw	r24, 0x01	; 1
+ 1e0:	a0 df       	rcall	.-192    	; 0x122 <fnd>
+	}
+ 1e2:	df 91       	pop	r29
+ 1e4:	cf 91       	pop	r28
+ 1e6:	1f 91       	pop	r17
+ 1e8:	0f 91       	pop	r16
+ 1ea:	ff 90       	pop	r15
+ 1ec:	ef 90       	pop	r14
+ 1ee:	08 95       	ret
+
+000001f0 <__divmodhi4>:
+ 1f0:	97 fb       	bst	r25, 7
+ 1f2:	07 2e       	mov	r0, r23
+ 1f4:	16 f4       	brtc	.+4      	; 0x1fa <__divmodhi4+0xa>
+ 1f6:	00 94       	com	r0
+ 1f8:	06 d0       	rcall	.+12     	; 0x206 <__divmodhi4_neg1>
+ 1fa:	77 fd       	sbrc	r23, 7
+ 1fc:	08 d0       	rcall	.+16     	; 0x20e <__divmodhi4_neg2>
+ 1fe:	0b d0       	rcall	.+22     	; 0x216 <__udivmodhi4>
+ 200:	07 fc       	sbrc	r0, 7
+ 202:	05 d0       	rcall	.+10     	; 0x20e <__divmodhi4_neg2>
+ 204:	3e f4       	brtc	.+14     	; 0x214 <__divmodhi4_exit>
+
+00000206 <__divmodhi4_neg1>:
+ 206:	90 95       	com	r25
+ 208:	81 95       	neg	r24
+ 20a:	9f 4f       	sbci	r25, 0xFF	; 255
+ 20c:	08 95       	ret
+
+0000020e <__divmodhi4_neg2>:
+ 20e:	70 95       	com	r23
+ 210:	61 95       	neg	r22
+ 212:	7f 4f       	sbci	r23, 0xFF	; 255
+
+00000214 <__divmodhi4_exit>:
+ 214:	08 95       	ret
+
+00000216 <__udivmodhi4>:
+ 216:	aa 1b       	sub	r26, r26
+ 218:	bb 1b       	sub	r27, r27
+ 21a:	51 e1       	ldi	r21, 0x11	; 17
+ 21c:	07 c0       	rjmp	.+14     	; 0x22c <__udivmodhi4_ep>
+
+0000021e <__udivmodhi4_loop>:
+ 21e:	aa 1f       	adc	r26, r26
+ 220:	bb 1f       	adc	r27, r27
+ 222:	a6 17       	cp	r26, r22
+ 224:	b7 07       	cpc	r27, r23
+ 226:	10 f0       	brcs	.+4      	; 0x22c <__udivmodhi4_ep>
+ 228:	a6 1b       	sub	r26, r22
+ 22a:	b7 0b       	sbc	r27, r23
+
+0000022c <__udivmodhi4_ep>:
+ 22c:	88 1f       	adc	r24, r24
+ 22e:	99 1f       	adc	r25, r25
+ 230:	5a 95       	dec	r21
+ 232:	a9 f7       	brne	.-22     	; 0x21e <__udivmodhi4_loop>
+ 234:	80 95       	com	r24
+ 236:	90 95       	com	r25
+ 238:	bc 01       	movw	r22, r24
+ 23a:	cd 01       	movw	r24, r26
+ 23c:	08 95       	ret
+
+0000023e <_exit>:
+ 23e:	f8 94       	cli
+
+00000240 <__stop_program>:
+ 240:	ff cf       	rjmp	.-2      	; 0x240 <__stop_program>

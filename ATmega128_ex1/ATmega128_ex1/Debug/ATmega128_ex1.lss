@@ -1,0 +1,228 @@
+
+ATmega128_ex1.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000000  00800100  00800100  00000150  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         000000fc  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  00000150  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  00000180  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000038  00000000  00000000  000001bc  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   00000973  00000000  00000000  000001f4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 00000859  00000000  00000000  00000b67  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   00000320  00000000  00000000  000013c0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000064  00000000  00000000  000016e0  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    00000453  00000000  00000000  00001744  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    00000112  00000000  00000000  00001b97  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000028  00000000  00000000  00001ca9  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	4b c0       	rjmp	.+150    	; 0x9c <__bad_interrupt>
+   6:	00 00       	nop
+   8:	49 c0       	rjmp	.+146    	; 0x9c <__bad_interrupt>
+   a:	00 00       	nop
+   c:	47 c0       	rjmp	.+142    	; 0x9c <__bad_interrupt>
+   e:	00 00       	nop
+  10:	45 c0       	rjmp	.+138    	; 0x9c <__bad_interrupt>
+  12:	00 00       	nop
+  14:	43 c0       	rjmp	.+134    	; 0x9c <__bad_interrupt>
+  16:	00 00       	nop
+  18:	41 c0       	rjmp	.+130    	; 0x9c <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	3f c0       	rjmp	.+126    	; 0x9c <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	3d c0       	rjmp	.+122    	; 0x9c <__bad_interrupt>
+  22:	00 00       	nop
+  24:	3b c0       	rjmp	.+118    	; 0x9c <__bad_interrupt>
+  26:	00 00       	nop
+  28:	39 c0       	rjmp	.+114    	; 0x9c <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	37 c0       	rjmp	.+110    	; 0x9c <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	35 c0       	rjmp	.+106    	; 0x9c <__bad_interrupt>
+  32:	00 00       	nop
+  34:	33 c0       	rjmp	.+102    	; 0x9c <__bad_interrupt>
+  36:	00 00       	nop
+  38:	31 c0       	rjmp	.+98     	; 0x9c <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	2f c0       	rjmp	.+94     	; 0x9c <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	2d c0       	rjmp	.+90     	; 0x9c <__bad_interrupt>
+  42:	00 00       	nop
+  44:	2b c0       	rjmp	.+86     	; 0x9c <__bad_interrupt>
+  46:	00 00       	nop
+  48:	29 c0       	rjmp	.+82     	; 0x9c <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	27 c0       	rjmp	.+78     	; 0x9c <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	25 c0       	rjmp	.+74     	; 0x9c <__bad_interrupt>
+  52:	00 00       	nop
+  54:	23 c0       	rjmp	.+70     	; 0x9c <__bad_interrupt>
+  56:	00 00       	nop
+  58:	21 c0       	rjmp	.+66     	; 0x9c <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	1f c0       	rjmp	.+62     	; 0x9c <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	1d c0       	rjmp	.+58     	; 0x9c <__bad_interrupt>
+  62:	00 00       	nop
+  64:	1b c0       	rjmp	.+54     	; 0x9c <__bad_interrupt>
+  66:	00 00       	nop
+  68:	19 c0       	rjmp	.+50     	; 0x9c <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	17 c0       	rjmp	.+46     	; 0x9c <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	15 c0       	rjmp	.+42     	; 0x9c <__bad_interrupt>
+  72:	00 00       	nop
+  74:	13 c0       	rjmp	.+38     	; 0x9c <__bad_interrupt>
+  76:	00 00       	nop
+  78:	11 c0       	rjmp	.+34     	; 0x9c <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	0f c0       	rjmp	.+30     	; 0x9c <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	0d c0       	rjmp	.+26     	; 0x9c <__bad_interrupt>
+  82:	00 00       	nop
+  84:	0b c0       	rjmp	.+22     	; 0x9c <__bad_interrupt>
+  86:	00 00       	nop
+  88:	09 c0       	rjmp	.+18     	; 0x9c <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+  98:	2c d0       	rcall	.+88     	; 0xf2 <main>
+  9a:	2e c0       	rjmp	.+92     	; 0xf8 <_exit>
+
+0000009c <__bad_interrupt>:
+  9c:	b1 cf       	rjmp	.-158    	; 0x0 <__vectors>
+
+0000009e <LED_PORTA>:
+#define F_CPU 16000000UL
+#include <util/delay.h>
+
+void LED_PORTA(unsigned char on) 
+{
+	DDRA = 0xff; // 포트 A를 출력으로 설정
+  9e:	9f ef       	ldi	r25, 0xFF	; 255
+  a0:	9a bb       	out	0x1a, r25	; 26
+	PORTA = on;  // on의 bit가 1이면, PA0에 연결된 LED가 켜짐, bit1->PA1, ..., bit7->PA7
+  a2:	8b bb       	out	0x1b, r24	; 27
+  a4:	08 95       	ret
+
+000000a6 <LED_0_255>:
+}
+
+void LED_0_255(void) 
+{
+  a6:	cf 93       	push	r28
+	// PA 0부터 255까지의 값을 출력
+	unsigned char number = 0;
+  a8:	c0 e0       	ldi	r28, 0x00	; 0
+	while(1) 
+	{
+		LED_PORTA(number);
+  aa:	8c 2f       	mov	r24, r28
+  ac:	f8 df       	rcall	.-16     	; 0x9e <LED_PORTA>
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+  ae:	2f ef       	ldi	r18, 0xFF	; 255
+  b0:	80 e7       	ldi	r24, 0x70	; 112
+  b2:	92 e0       	ldi	r25, 0x02	; 2
+  b4:	21 50       	subi	r18, 0x01	; 1
+  b6:	80 40       	sbci	r24, 0x00	; 0
+  b8:	90 40       	sbci	r25, 0x00	; 0
+  ba:	e1 f7       	brne	.-8      	; 0xb4 <LED_0_255+0xe>
+  bc:	00 c0       	rjmp	.+0      	; 0xbe <LED_0_255+0x18>
+  be:	00 00       	nop
+		_delay_ms(50); // 50ms 지연
+		if(number == 0xff) break;
+  c0:	cf 3f       	cpi	r28, 0xFF	; 255
+  c2:	11 f0       	breq	.+4      	; 0xc8 <LED_0_255+0x22>
+		number++;
+  c4:	cf 5f       	subi	r28, 0xFF	; 255
+	}
+  c6:	f1 cf       	rjmp	.-30     	; 0xaa <LED_0_255+0x4>
+}
+  c8:	cf 91       	pop	r28
+  ca:	08 95       	ret
+
+000000cc <LED_bit_left_shift>:
+
+void LED_bit_left_shift(void) 
+{
+  cc:	cf 93       	push	r28
+	// left shift 비트 연산자로 PA0에서 PA7까지 순차적으로 LED 켜기
+	unsigned char bit = 1;
+  ce:	c1 e0       	ldi	r28, 0x01	; 1
+	while(bit != 0) {
+  d0:	0c c0       	rjmp	.+24     	; 0xea <LED_bit_left_shift+0x1e>
+		LED_PORTA(bit);
+  d2:	8c 2f       	mov	r24, r28
+  d4:	e4 df       	rcall	.-56     	; 0x9e <LED_PORTA>
+  d6:	2f ef       	ldi	r18, 0xFF	; 255
+  d8:	89 e6       	ldi	r24, 0x69	; 105
+  da:	98 e1       	ldi	r25, 0x18	; 24
+  dc:	21 50       	subi	r18, 0x01	; 1
+  de:	80 40       	sbci	r24, 0x00	; 0
+  e0:	90 40       	sbci	r25, 0x00	; 0
+  e2:	e1 f7       	brne	.-8      	; 0xdc <LED_bit_left_shift+0x10>
+  e4:	00 c0       	rjmp	.+0      	; 0xe6 <LED_bit_left_shift+0x1a>
+  e6:	00 00       	nop
+		_delay_ms(500);
+		bit <<= 1;
+  e8:	cc 0f       	add	r28, r28
+
+void LED_bit_left_shift(void) 
+{
+	// left shift 비트 연산자로 PA0에서 PA7까지 순차적으로 LED 켜기
+	unsigned char bit = 1;
+	while(bit != 0) {
+  ea:	c1 11       	cpse	r28, r1
+  ec:	f2 cf       	rjmp	.-28     	; 0xd2 <LED_bit_left_shift+0x6>
+		LED_PORTA(bit);
+		_delay_ms(500);
+		bit <<= 1;
+	}
+}
+  ee:	cf 91       	pop	r28
+  f0:	08 95       	ret
+
+000000f2 <main>:
+
+int main(void) 
+{
+	while(1) {
+		LED_0_255();
+  f2:	d9 df       	rcall	.-78     	; 0xa6 <LED_0_255>
+		LED_bit_left_shift();
+  f4:	eb df       	rcall	.-42     	; 0xcc <LED_bit_left_shift>
+  f6:	fd cf       	rjmp	.-6      	; 0xf2 <main>
+
+000000f8 <_exit>:
+  f8:	f8 94       	cli
+
+000000fa <__stop_program>:
+  fa:	ff cf       	rjmp	.-2      	; 0xfa <__stop_program>

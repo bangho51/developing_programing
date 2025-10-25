@@ -1,0 +1,482 @@
+
+Timer_count_ex1.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000012  00800100  00000286  0000031a  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         00000286  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          00000004  00800112  00800112  0000032c  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  0000032c  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  0000035c  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 00000068  00000000  00000000  00000398  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   00000b01  00000000  00000000  00000400  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 00000967  00000000  00000000  00000f01  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   00000499  00000000  00000000  00001868  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  000000e4  00000000  00000000  00001d04  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    000004c2  00000000  00000000  00001de8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    00000294  00000000  00000000  000022aa  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 00000048  00000000  00000000  0000253e  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	60 c0       	rjmp	.+192    	; 0xc6 <__bad_interrupt>
+   6:	00 00       	nop
+   8:	5e c0       	rjmp	.+188    	; 0xc6 <__bad_interrupt>
+   a:	00 00       	nop
+   c:	5c c0       	rjmp	.+184    	; 0xc6 <__bad_interrupt>
+   e:	00 00       	nop
+  10:	5a c0       	rjmp	.+180    	; 0xc6 <__bad_interrupt>
+  12:	00 00       	nop
+  14:	58 c0       	rjmp	.+176    	; 0xc6 <__bad_interrupt>
+  16:	00 00       	nop
+  18:	56 c0       	rjmp	.+172    	; 0xc6 <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	54 c0       	rjmp	.+168    	; 0xc6 <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	52 c0       	rjmp	.+164    	; 0xc6 <__bad_interrupt>
+  22:	00 00       	nop
+  24:	50 c0       	rjmp	.+160    	; 0xc6 <__bad_interrupt>
+  26:	00 00       	nop
+  28:	4e c0       	rjmp	.+156    	; 0xc6 <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	4c c0       	rjmp	.+152    	; 0xc6 <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	4a c0       	rjmp	.+148    	; 0xc6 <__bad_interrupt>
+  32:	00 00       	nop
+  34:	48 c0       	rjmp	.+144    	; 0xc6 <__bad_interrupt>
+  36:	00 00       	nop
+  38:	46 c0       	rjmp	.+140    	; 0xc6 <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	44 c0       	rjmp	.+136    	; 0xc6 <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	43 c0       	rjmp	.+134    	; 0xc8 <__vector_16>
+  42:	00 00       	nop
+  44:	40 c0       	rjmp	.+128    	; 0xc6 <__bad_interrupt>
+  46:	00 00       	nop
+  48:	3e c0       	rjmp	.+124    	; 0xc6 <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	3c c0       	rjmp	.+120    	; 0xc6 <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	3a c0       	rjmp	.+116    	; 0xc6 <__bad_interrupt>
+  52:	00 00       	nop
+  54:	38 c0       	rjmp	.+112    	; 0xc6 <__bad_interrupt>
+  56:	00 00       	nop
+  58:	36 c0       	rjmp	.+108    	; 0xc6 <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	34 c0       	rjmp	.+104    	; 0xc6 <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	32 c0       	rjmp	.+100    	; 0xc6 <__bad_interrupt>
+  62:	00 00       	nop
+  64:	30 c0       	rjmp	.+96     	; 0xc6 <__bad_interrupt>
+  66:	00 00       	nop
+  68:	2e c0       	rjmp	.+92     	; 0xc6 <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	2c c0       	rjmp	.+88     	; 0xc6 <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	2a c0       	rjmp	.+84     	; 0xc6 <__bad_interrupt>
+  72:	00 00       	nop
+  74:	28 c0       	rjmp	.+80     	; 0xc6 <__bad_interrupt>
+  76:	00 00       	nop
+  78:	26 c0       	rjmp	.+76     	; 0xc6 <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	24 c0       	rjmp	.+72     	; 0xc6 <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	22 c0       	rjmp	.+68     	; 0xc6 <__bad_interrupt>
+  82:	00 00       	nop
+  84:	20 c0       	rjmp	.+64     	; 0xc6 <__bad_interrupt>
+  86:	00 00       	nop
+  88:	1e c0       	rjmp	.+60     	; 0xc6 <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+
+00000098 <__do_copy_data>:
+  98:	11 e0       	ldi	r17, 0x01	; 1
+  9a:	a0 e0       	ldi	r26, 0x00	; 0
+  9c:	b1 e0       	ldi	r27, 0x01	; 1
+  9e:	e6 e8       	ldi	r30, 0x86	; 134
+  a0:	f2 e0       	ldi	r31, 0x02	; 2
+  a2:	00 e0       	ldi	r16, 0x00	; 0
+  a4:	0b bf       	out	0x3b, r16	; 59
+  a6:	02 c0       	rjmp	.+4      	; 0xac <__do_copy_data+0x14>
+  a8:	07 90       	elpm	r0, Z+
+  aa:	0d 92       	st	X+, r0
+  ac:	a2 31       	cpi	r26, 0x12	; 18
+  ae:	b1 07       	cpc	r27, r17
+  b0:	d9 f7       	brne	.-10     	; 0xa8 <__do_copy_data+0x10>
+
+000000b2 <__do_clear_bss>:
+  b2:	21 e0       	ldi	r18, 0x01	; 1
+  b4:	a2 e1       	ldi	r26, 0x12	; 18
+  b6:	b1 e0       	ldi	r27, 0x01	; 1
+  b8:	01 c0       	rjmp	.+2      	; 0xbc <.do_clear_bss_start>
+
+000000ba <.do_clear_bss_loop>:
+  ba:	1d 92       	st	X+, r1
+
+000000bc <.do_clear_bss_start>:
+  bc:	a6 31       	cpi	r26, 0x16	; 22
+  be:	b2 07       	cpc	r27, r18
+  c0:	e1 f7       	brne	.-8      	; 0xba <.do_clear_bss_loop>
+  c2:	40 d0       	rcall	.+128    	; 0x144 <main>
+  c4:	de c0       	rjmp	.+444    	; 0x282 <_exit>
+
+000000c6 <__bad_interrupt>:
+  c6:	9c cf       	rjmp	.-200    	; 0x0 <__vectors>
+
+000000c8 <__vector_16>:
+
+unsigned int msec = 0; // msec를 세기 위한 변수
+unsigned int sec = 0; // sec를 세기 위한 변수
+
+ISR(TIMER0_OVF_vect) // Timer 0 오버플로우 인터럽트
+{
+  c8:	1f 92       	push	r1
+  ca:	0f 92       	push	r0
+  cc:	0f b6       	in	r0, 0x3f	; 63
+  ce:	0f 92       	push	r0
+  d0:	11 24       	eor	r1, r1
+  d2:	2f 93       	push	r18
+  d4:	3f 93       	push	r19
+  d6:	8f 93       	push	r24
+  d8:	9f 93       	push	r25
+	TCNT0=0x06; // 1ms 오버플로우를 만들기 위해 타이머 레지스터 초기값 설정
+  da:	86 e0       	ldi	r24, 0x06	; 6
+  dc:	82 bf       	out	0x32, r24	; 50
+	if(msec++ == 1000) // 1000ms 일때 동작
+  de:	80 91 14 01 	lds	r24, 0x0114	; 0x800114 <msec>
+  e2:	90 91 15 01 	lds	r25, 0x0115	; 0x800115 <msec+0x1>
+  e6:	9c 01       	movw	r18, r24
+  e8:	2f 5f       	subi	r18, 0xFF	; 255
+  ea:	3f 4f       	sbci	r19, 0xFF	; 255
+  ec:	30 93 15 01 	sts	0x0115, r19	; 0x800115 <msec+0x1>
+  f0:	20 93 14 01 	sts	0x0114, r18	; 0x800114 <msec>
+  f4:	88 3e       	cpi	r24, 0xE8	; 232
+  f6:	93 40       	sbci	r25, 0x03	; 3
+  f8:	a1 f4       	brne	.+40     	; 0x122 <__vector_16+0x5a>
+	{
+		sec++;
+  fa:	80 91 12 01 	lds	r24, 0x0112	; 0x800112 <__data_end>
+  fe:	90 91 13 01 	lds	r25, 0x0113	; 0x800113 <__data_end+0x1>
+ 102:	01 96       	adiw	r24, 0x01	; 1
+ 104:	90 93 13 01 	sts	0x0113, r25	; 0x800113 <__data_end+0x1>
+ 108:	80 93 12 01 	sts	0x0112, r24	; 0x800112 <__data_end>
+		msec=0;
+ 10c:	10 92 15 01 	sts	0x0115, r1	; 0x800115 <msec+0x1>
+ 110:	10 92 14 01 	sts	0x0114, r1	; 0x800114 <msec>
+		if(sec == 10000) sec = 0;
+ 114:	80 31       	cpi	r24, 0x10	; 16
+ 116:	97 42       	sbci	r25, 0x27	; 39
+ 118:	21 f4       	brne	.+8      	; 0x122 <__vector_16+0x5a>
+ 11a:	10 92 13 01 	sts	0x0113, r1	; 0x800113 <__data_end+0x1>
+ 11e:	10 92 12 01 	sts	0x0112, r1	; 0x800112 <__data_end>
+	}
+}
+ 122:	9f 91       	pop	r25
+ 124:	8f 91       	pop	r24
+ 126:	3f 91       	pop	r19
+ 128:	2f 91       	pop	r18
+ 12a:	0f 90       	pop	r0
+ 12c:	0f be       	out	0x3f, r0	; 63
+ 12e:	0f 90       	pop	r0
+ 130:	1f 90       	pop	r1
+ 132:	18 95       	reti
+
+00000134 <init_timer0_normal_ovf_int>:
+
+void init_timer0_normal_ovf_int(void)
+{
+	sei();
+ 134:	78 94       	sei
+
+	TCCR0=0x04; // FOC0 | WGM00 | COM01 | COM00 | WGM01 | CS02 | CS01 | CS00; F_CPU/64 = 16000000/64=250,000Hz, T=4us, 4*250 = 1msec
+ 136:	84 e0       	ldi	r24, 0x04	; 4
+ 138:	83 bf       	out	0x33, r24	; 51
+	TCNT0=0x06; // 1ms 오버플로우를 만들기 위해 타이머 레지스터 초기값 설정
+ 13a:	86 e0       	ldi	r24, 0x06	; 6
+ 13c:	82 bf       	out	0x32, r24	; 50
+	// Timer(s)/Counter(s) Interrupt(s) Initialization
+	TIMSK=0x01; // TOIE2 | OCIE2 | TICIE1 | OCIE1A | OCIE1B | TOIE1 | OCIE0 | TOIE0; // Enable overflow interrupt
+ 13e:	81 e0       	ldi	r24, 0x01	; 1
+ 140:	87 bf       	out	0x37, r24	; 55
+ 142:	08 95       	ret
+
+00000144 <main>:
+}
+
+int main(void)
+{
+	init_fnd();
+ 144:	07 d0       	rcall	.+14     	; 0x154 <init_fnd>
+	init_timer0_normal_ovf_int();
+ 146:	f6 df       	rcall	.-20     	; 0x134 <init_timer0_normal_ovf_int>
+ 148:	80 91 12 01 	lds	r24, 0x0112	; 0x800112 <__data_end>
+	while(1)
+	{
+		fnd_number(sec);
+ 14c:	90 91 13 01 	lds	r25, 0x0113	; 0x800113 <__data_end+0x1>
+ 150:	36 d0       	rcall	.+108    	; 0x1be <fnd_number>
+ 152:	fa cf       	rjmp	.-12     	; 0x148 <main+0x4>
+
+00000154 <init_fnd>:
+ 154:	8f ef       	ldi	r24, 0xFF	; 255
+unsigned char fnd_digit[] = {0x3f, 0x06, 0x5b, 0x4f, 0x66, 0x6d, 0x7d, 0x07, 0x7f, 0x6f, 0x77, 0x7c, 0x39, 0x5e, 0x79, 0x71}; // common cathode FND 0-F
+unsigned char fnd_minus = 0x40;
+unsigned char fnd_dp = 0x80;
+void init_fnd(void)
+{
+	DDRC = 0xff; // PC 출력 fnd display, 1:ON, 0:OFF
+ 156:	84 bb       	out	0x14, r24	; 20
+	DDRG = 0x0f; // 4개의 fnd 중, 1:선택, 0:선택 안함
+ 158:	8f e0       	ldi	r24, 0x0F	; 15
+ 15a:	80 93 64 00 	sts	0x0064, r24	; 0x800064 <__TEXT_REGION_LENGTH__+0x7e0064>
+	PORTC = 0; // fnd 모두 꺼짐
+ 15e:	15 ba       	out	0x15, r1	; 21
+	PORTG = 0; // fnd 선택 없음
+ 160:	10 92 65 00 	sts	0x0065, r1	; 0x800065 <__TEXT_REGION_LENGTH__+0x7e0065>
+ 164:	08 95       	ret
+
+00000166 <fnd>:
+}
+
+void fnd(int ith, int digit)
+{
+	PORTG = 1 << ith; // fnd 선택
+ 166:	21 e0       	ldi	r18, 0x01	; 1
+ 168:	30 e0       	ldi	r19, 0x00	; 0
+ 16a:	02 c0       	rjmp	.+4      	; 0x170 <fnd+0xa>
+ 16c:	22 0f       	add	r18, r18
+ 16e:	33 1f       	adc	r19, r19
+ 170:	8a 95       	dec	r24
+ 172:	e2 f7       	brpl	.-8      	; 0x16c <fnd+0x6>
+ 174:	20 93 65 00 	sts	0x0065, r18	; 0x800065 <__TEXT_REGION_LENGTH__+0x7e0065>
+	if(digit >= 0 && digit < 16) PORTC = fnd_digit[digit]; // 16진수 표시
+ 178:	60 31       	cpi	r22, 0x10	; 16
+ 17a:	71 05       	cpc	r23, r1
+ 17c:	30 f4       	brcc	.+12     	; 0x18a <fnd+0x24>
+ 17e:	fb 01       	movw	r30, r22
+ 180:	ef 5f       	subi	r30, 0xFF	; 255
+ 182:	fe 4f       	sbci	r31, 0xFE	; 254
+ 184:	80 81       	ld	r24, Z
+ 186:	85 bb       	out	0x15, r24	; 21
+ 188:	03 c0       	rjmp	.+6      	; 0x190 <fnd+0x2a>
+	else PORTC = fnd_minus;
+ 18a:	80 91 00 01 	lds	r24, 0x0100	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 18e:	85 bb       	out	0x15, r24	; 21
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 190:	8f e3       	ldi	r24, 0x3F	; 63
+ 192:	9f e1       	ldi	r25, 0x1F	; 31
+ 194:	01 97       	sbiw	r24, 0x01	; 1
+ 196:	f1 f7       	brne	.-4      	; 0x194 <fnd+0x2e>
+ 198:	00 c0       	rjmp	.+0      	; 0x19a <fnd+0x34>
+ 19a:	00 00       	nop
+ 19c:	08 95       	ret
+
+0000019e <fnd_overflow>:
+	_delay_ms(FND_DELAY);
+}
+
+void fnd_overflow(void) // 표현 불가 표시하기
+{
+ 19e:	cf 93       	push	r28
+ 1a0:	df 93       	push	r29
+	int i;
+	for(i=0; i<4; i++)
+ 1a2:	c0 e0       	ldi	r28, 0x00	; 0
+ 1a4:	d0 e0       	ldi	r29, 0x00	; 0
+ 1a6:	05 c0       	rjmp	.+10     	; 0x1b2 <fnd_overflow+0x14>
+	fnd(i, -1);
+ 1a8:	6f ef       	ldi	r22, 0xFF	; 255
+ 1aa:	7f ef       	ldi	r23, 0xFF	; 255
+ 1ac:	ce 01       	movw	r24, r28
+ 1ae:	db df       	rcall	.-74     	; 0x166 <fnd>
+}
+
+void fnd_overflow(void) // 표현 불가 표시하기
+{
+	int i;
+	for(i=0; i<4; i++)
+ 1b0:	21 96       	adiw	r28, 0x01	; 1
+ 1b2:	c4 30       	cpi	r28, 0x04	; 4
+ 1b4:	d1 05       	cpc	r29, r1
+ 1b6:	c4 f3       	brlt	.-16     	; 0x1a8 <fnd_overflow+0xa>
+	fnd(i, -1);
+}
+ 1b8:	df 91       	pop	r29
+ 1ba:	cf 91       	pop	r28
+ 1bc:	08 95       	ret
+
+000001be <fnd_number>:
+
+void fnd_number(int number)
+{
+ 1be:	ef 92       	push	r14
+ 1c0:	ff 92       	push	r15
+ 1c2:	0f 93       	push	r16
+ 1c4:	1f 93       	push	r17
+ 1c6:	cf 93       	push	r28
+ 1c8:	df 93       	push	r29
+ 1ca:	7c 01       	movw	r14, r24
+	int abs_number, n, i;
+	if(number < -999 || number > 9999)
+ 1cc:	89 51       	subi	r24, 0x19	; 25
+ 1ce:	9c 4f       	sbci	r25, 0xFC	; 252
+ 1d0:	87 3f       	cpi	r24, 0xF7	; 247
+ 1d2:	9a 42       	sbci	r25, 0x2A	; 42
+ 1d4:	10 f0       	brcs	.+4      	; 0x1da <fnd_number+0x1c>
+	{
+		fnd_overflow(); // 숫자 표현 범위를 넘어감
+ 1d6:	e3 df       	rcall	.-58     	; 0x19e <fnd_overflow>
+ 1d8:	26 c0       	rjmp	.+76     	; 0x226 <fnd_number+0x68>
+	}
+	else
+	{
+		abs_number = absolute(number);
+ 1da:	e7 01       	movw	r28, r14
+ 1dc:	ff 20       	and	r15, r15
+ 1de:	24 f4       	brge	.+8      	; 0x1e8 <fnd_number+0x2a>
+ 1e0:	cc 27       	eor	r28, r28
+ 1e2:	dd 27       	eor	r29, r29
+ 1e4:	ce 19       	sub	r28, r14
+ 1e6:	df 09       	sbc	r29, r15
+		for(i=0; i<4; i++)
+ 1e8:	00 e0       	ldi	r16, 0x00	; 0
+ 1ea:	10 e0       	ldi	r17, 0x00	; 0
+ 1ec:	11 c0       	rjmp	.+34     	; 0x210 <fnd_number+0x52>
+		{
+			n = abs_number % 10; // 10으로 나눈 나머지 수
+ 1ee:	ce 01       	movw	r24, r28
+ 1f0:	6a e0       	ldi	r22, 0x0A	; 10
+ 1f2:	70 e0       	ldi	r23, 0x00	; 0
+ 1f4:	1f d0       	rcall	.+62     	; 0x234 <__divmodhi4>
+			fnd(i, n);
+ 1f6:	bc 01       	movw	r22, r24
+ 1f8:	c8 01       	movw	r24, r16
+ 1fa:	b5 df       	rcall	.-150    	; 0x166 <fnd>
+			if(abs_number >= 10) abs_number /= 10; // 10으로 나누어 다음 자리 수로 이동
+ 1fc:	ca 30       	cpi	r28, 0x0A	; 10
+ 1fe:	d1 05       	cpc	r29, r1
+ 200:	54 f0       	brlt	.+20     	; 0x216 <fnd_number+0x58>
+ 202:	ce 01       	movw	r24, r28
+ 204:	6a e0       	ldi	r22, 0x0A	; 10
+ 206:	70 e0       	ldi	r23, 0x00	; 0
+ 208:	15 d0       	rcall	.+42     	; 0x234 <__divmodhi4>
+ 20a:	eb 01       	movw	r28, r22
+		fnd_overflow(); // 숫자 표현 범위를 넘어감
+	}
+	else
+	{
+		abs_number = absolute(number);
+		for(i=0; i<4; i++)
+ 20c:	0f 5f       	subi	r16, 0xFF	; 255
+ 20e:	1f 4f       	sbci	r17, 0xFF	; 255
+ 210:	04 30       	cpi	r16, 0x04	; 4
+ 212:	11 05       	cpc	r17, r1
+ 214:	64 f3       	brlt	.-40     	; 0x1ee <fnd_number+0x30>
+			n = abs_number % 10; // 10으로 나눈 나머지 수
+			fnd(i, n);
+			if(abs_number >= 10) abs_number /= 10; // 10으로 나누어 다음 자리 수로 이동
+			else break;
+		}
+		if(number < 0) fnd(i+1, fnd_minus); // 음수 부호
+ 216:	ff 20       	and	r15, r15
+ 218:	34 f4       	brge	.+12     	; 0x226 <fnd_number+0x68>
+ 21a:	60 91 00 01 	lds	r22, 0x0100	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 21e:	70 e0       	ldi	r23, 0x00	; 0
+ 220:	c8 01       	movw	r24, r16
+ 222:	01 96       	adiw	r24, 0x01	; 1
+ 224:	a0 df       	rcall	.-192    	; 0x166 <fnd>
+	}
+ 226:	df 91       	pop	r29
+ 228:	cf 91       	pop	r28
+ 22a:	1f 91       	pop	r17
+ 22c:	0f 91       	pop	r16
+ 22e:	ff 90       	pop	r15
+ 230:	ef 90       	pop	r14
+ 232:	08 95       	ret
+
+00000234 <__divmodhi4>:
+ 234:	97 fb       	bst	r25, 7
+ 236:	07 2e       	mov	r0, r23
+ 238:	16 f4       	brtc	.+4      	; 0x23e <__divmodhi4+0xa>
+ 23a:	00 94       	com	r0
+ 23c:	06 d0       	rcall	.+12     	; 0x24a <__divmodhi4_neg1>
+ 23e:	77 fd       	sbrc	r23, 7
+ 240:	08 d0       	rcall	.+16     	; 0x252 <__divmodhi4_neg2>
+ 242:	0b d0       	rcall	.+22     	; 0x25a <__udivmodhi4>
+ 244:	07 fc       	sbrc	r0, 7
+ 246:	05 d0       	rcall	.+10     	; 0x252 <__divmodhi4_neg2>
+ 248:	3e f4       	brtc	.+14     	; 0x258 <__divmodhi4_exit>
+
+0000024a <__divmodhi4_neg1>:
+ 24a:	90 95       	com	r25
+ 24c:	81 95       	neg	r24
+ 24e:	9f 4f       	sbci	r25, 0xFF	; 255
+ 250:	08 95       	ret
+
+00000252 <__divmodhi4_neg2>:
+ 252:	70 95       	com	r23
+ 254:	61 95       	neg	r22
+ 256:	7f 4f       	sbci	r23, 0xFF	; 255
+
+00000258 <__divmodhi4_exit>:
+ 258:	08 95       	ret
+
+0000025a <__udivmodhi4>:
+ 25a:	aa 1b       	sub	r26, r26
+ 25c:	bb 1b       	sub	r27, r27
+ 25e:	51 e1       	ldi	r21, 0x11	; 17
+ 260:	07 c0       	rjmp	.+14     	; 0x270 <__udivmodhi4_ep>
+
+00000262 <__udivmodhi4_loop>:
+ 262:	aa 1f       	adc	r26, r26
+ 264:	bb 1f       	adc	r27, r27
+ 266:	a6 17       	cp	r26, r22
+ 268:	b7 07       	cpc	r27, r23
+ 26a:	10 f0       	brcs	.+4      	; 0x270 <__udivmodhi4_ep>
+ 26c:	a6 1b       	sub	r26, r22
+ 26e:	b7 0b       	sbc	r27, r23
+
+00000270 <__udivmodhi4_ep>:
+ 270:	88 1f       	adc	r24, r24
+ 272:	99 1f       	adc	r25, r25
+ 274:	5a 95       	dec	r21
+ 276:	a9 f7       	brne	.-22     	; 0x262 <__udivmodhi4_loop>
+ 278:	80 95       	com	r24
+ 27a:	90 95       	com	r25
+ 27c:	bc 01       	movw	r22, r24
+ 27e:	cd 01       	movw	r24, r26
+ 280:	08 95       	ret
+
+00000282 <_exit>:
+ 282:	f8 94       	cli
+
+00000284 <__stop_program>:
+ 284:	ff cf       	rjmp	.-2      	; 0x284 <__stop_program>
