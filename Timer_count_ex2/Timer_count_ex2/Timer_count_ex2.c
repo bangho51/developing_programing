@@ -9,18 +9,22 @@
 #define F_CPU 16000000UL
 #include <avr/interrupt.h>
 #include <util/delay.h>
-
+ISR(TIMER0_COMP_vect)
+{
+	
+}
 void init_OC0(void)
 {
 	DDRB = 0x10; // PB4(OC0) 출력으로 설정
 }
 
-void init_timer0_fastPWM(int prescaler, unsigned char ocr)
+void init_timer0_ctc_OCIE(int prescaler, unsigned char ocr)
 {
+	unsigned long dn;
 	sei();
 	// TCCR0: FOC0=0 | COM01=1, COM00=0 | WGM01=1, WGM00=1
 	// Fast PWM 모드, Compare Match 시 OC0 Clear (비반전 모드)
-	TCCR0 = 0b01101000;
+	TCCR0 = 0b00011000;
 
 	// 분주비(prescaler) 설정: TCCR0 레지스터의 CS02, CS01, CS00 비트 설정
 	if(prescaler == 1) TCCR0 |= 1; // OC0B PWM 주파수 = F_CPU/(prescaler*256)
@@ -30,8 +34,9 @@ void init_timer0_fastPWM(int prescaler, unsigned char ocr)
 	if(prescaler == 128) TCCR0 |= 5;
 	if(prescaler == 256) TCCR0 |= 6;
 	if(prescaler == 1024) TCCR0 |= 7;
-	
-	OCR0 = ocr; // 듀티비 50% (실제 코드에서는 OCR0 값이 ocr로 설정됨)
+	dn = 2UL*(unsigned long)prescaler*oc0_freq;
+	OCR0 = (unsigned char) ((double)F_CPU/(double)dn) -1;
+	TIMSK=0x02;
 }
 
 void OC0_0(void) // 소리 안나게 하기
@@ -47,14 +52,10 @@ void phone_bell(int count)
 	{
 		for(i=0; i<10; i++) // 높은 음과 낮은 음을 10회 반복 (따르릉 소리 패턴)
 		{
-			// 488Hz (높은 음) 생성: 16000000 / (128 * 256) = 488.28 Hz
-			// 듀티비 50% (OCR0=128)
-			init_timer0_fastPWM(128, 128);
-			_delay_ms(25);
 			
-			// 244Hz (낮은 음) 생성: 16000000 / (256 * 256) = 244.14 Hz
-			// 듀티비 50% (OCR0=128)
-			init_timer0_fastPWM(256, 128);
+			init_timer0_ctc_OCIE(480, 128);
+			_delay_ms(25);
+			init_timer0_ctc_OCIE(480, 128);
 			_delay_ms(25);
 		}
 		
