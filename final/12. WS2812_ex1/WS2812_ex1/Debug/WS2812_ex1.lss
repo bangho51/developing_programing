@@ -1,0 +1,613 @@
+
+WS2812_ex1.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000400  00800100  00000310  000003a4  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         00000310  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          000000c0  00800500  00800500  000007a4  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  000007a4  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  000007d4  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 00000058  00000000  00000000  00000810  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   00000c41  00000000  00000000  00000868  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 000008c5  00000000  00000000  000014a9  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   000005d4  00000000  00000000  00001d6e  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  000000c0  00000000  00000000  00002344  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    00000473  00000000  00000000  00002404  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    00000636  00000000  00000000  00002877  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 00000048  00000000  00000000  00002ead  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	60 c0       	rjmp	.+192    	; 0xc6 <__bad_interrupt>
+   6:	00 00       	nop
+   8:	5e c0       	rjmp	.+188    	; 0xc6 <__bad_interrupt>
+   a:	00 00       	nop
+   c:	5c c0       	rjmp	.+184    	; 0xc6 <__bad_interrupt>
+   e:	00 00       	nop
+  10:	5a c0       	rjmp	.+180    	; 0xc6 <__bad_interrupt>
+  12:	00 00       	nop
+  14:	58 c0       	rjmp	.+176    	; 0xc6 <__bad_interrupt>
+  16:	00 00       	nop
+  18:	56 c0       	rjmp	.+172    	; 0xc6 <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	54 c0       	rjmp	.+168    	; 0xc6 <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	52 c0       	rjmp	.+164    	; 0xc6 <__bad_interrupt>
+  22:	00 00       	nop
+  24:	50 c0       	rjmp	.+160    	; 0xc6 <__bad_interrupt>
+  26:	00 00       	nop
+  28:	4e c0       	rjmp	.+156    	; 0xc6 <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	4c c0       	rjmp	.+152    	; 0xc6 <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	4a c0       	rjmp	.+148    	; 0xc6 <__bad_interrupt>
+  32:	00 00       	nop
+  34:	48 c0       	rjmp	.+144    	; 0xc6 <__bad_interrupt>
+  36:	00 00       	nop
+  38:	46 c0       	rjmp	.+140    	; 0xc6 <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	44 c0       	rjmp	.+136    	; 0xc6 <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	42 c0       	rjmp	.+132    	; 0xc6 <__bad_interrupt>
+  42:	00 00       	nop
+  44:	40 c0       	rjmp	.+128    	; 0xc6 <__bad_interrupt>
+  46:	00 00       	nop
+  48:	3e c0       	rjmp	.+124    	; 0xc6 <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	3c c0       	rjmp	.+120    	; 0xc6 <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	3a c0       	rjmp	.+116    	; 0xc6 <__bad_interrupt>
+  52:	00 00       	nop
+  54:	38 c0       	rjmp	.+112    	; 0xc6 <__bad_interrupt>
+  56:	00 00       	nop
+  58:	36 c0       	rjmp	.+108    	; 0xc6 <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	34 c0       	rjmp	.+104    	; 0xc6 <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	32 c0       	rjmp	.+100    	; 0xc6 <__bad_interrupt>
+  62:	00 00       	nop
+  64:	30 c0       	rjmp	.+96     	; 0xc6 <__bad_interrupt>
+  66:	00 00       	nop
+  68:	2e c0       	rjmp	.+92     	; 0xc6 <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	2c c0       	rjmp	.+88     	; 0xc6 <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	2a c0       	rjmp	.+84     	; 0xc6 <__bad_interrupt>
+  72:	00 00       	nop
+  74:	28 c0       	rjmp	.+80     	; 0xc6 <__bad_interrupt>
+  76:	00 00       	nop
+  78:	26 c0       	rjmp	.+76     	; 0xc6 <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	24 c0       	rjmp	.+72     	; 0xc6 <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	22 c0       	rjmp	.+68     	; 0xc6 <__bad_interrupt>
+  82:	00 00       	nop
+  84:	20 c0       	rjmp	.+64     	; 0xc6 <__bad_interrupt>
+  86:	00 00       	nop
+  88:	1e c0       	rjmp	.+60     	; 0xc6 <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+
+00000098 <__do_copy_data>:
+  98:	15 e0       	ldi	r17, 0x05	; 5
+  9a:	a0 e0       	ldi	r26, 0x00	; 0
+  9c:	b1 e0       	ldi	r27, 0x01	; 1
+  9e:	e0 e1       	ldi	r30, 0x10	; 16
+  a0:	f3 e0       	ldi	r31, 0x03	; 3
+  a2:	00 e0       	ldi	r16, 0x00	; 0
+  a4:	0b bf       	out	0x3b, r16	; 59
+  a6:	02 c0       	rjmp	.+4      	; 0xac <__do_copy_data+0x14>
+  a8:	07 90       	elpm	r0, Z+
+  aa:	0d 92       	st	X+, r0
+  ac:	a0 30       	cpi	r26, 0x00	; 0
+  ae:	b1 07       	cpc	r27, r17
+  b0:	d9 f7       	brne	.-10     	; 0xa8 <__do_copy_data+0x10>
+
+000000b2 <__do_clear_bss>:
+  b2:	25 e0       	ldi	r18, 0x05	; 5
+  b4:	a0 e0       	ldi	r26, 0x00	; 0
+  b6:	b5 e0       	ldi	r27, 0x05	; 5
+  b8:	01 c0       	rjmp	.+2      	; 0xbc <.do_clear_bss_start>
+
+000000ba <.do_clear_bss_loop>:
+  ba:	1d 92       	st	X+, r1
+
+000000bc <.do_clear_bss_start>:
+  bc:	a0 3c       	cpi	r26, 0xC0	; 192
+  be:	b2 07       	cpc	r27, r18
+  c0:	e1 f7       	brne	.-8      	; 0xba <.do_clear_bss_loop>
+  c2:	20 d1       	rcall	.+576    	; 0x304 <main>
+  c4:	23 c1       	rjmp	.+582    	; 0x30c <_exit>
+
+000000c6 <__bad_interrupt>:
+  c6:	9c cf       	rjmp	.-200    	; 0x0 <__vectors>
+
+000000c8 <ascii2c>:
+   {0x02, 0x03, 0x01, 0x03, 0x02, 0x03, 0x01, 0x00},   // 0x7E(~)
+   {0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00}   // 0x7F
+};
+
+void ascii2c(unsigned char iascii)
+{
+  c8:	cf 93       	push	r28
+  ca:	df 93       	push	r29
+   unsigned char *pa, *pc;
+   unsigned char i, r, g, b;
+   pa = ascii8x8[iascii];
+  cc:	e8 2f       	mov	r30, r24
+  ce:	f0 e0       	ldi	r31, 0x00	; 0
+  d0:	ee 0f       	add	r30, r30
+  d2:	ff 1f       	adc	r31, r31
+  d4:	ee 0f       	add	r30, r30
+  d6:	ff 1f       	adc	r31, r31
+  d8:	ee 0f       	add	r30, r30
+  da:	ff 1f       	adc	r31, r31
+  dc:	e0 50       	subi	r30, 0x00	; 0
+  de:	ff 4f       	sbci	r31, 0xFF	; 255
+   pc = c8x8;
+   r = 0x0f; g = 0x0f; b = 0x0f; // 밝기 조정 (너무 밝지 않게 설정)
+
+   for(i=0; i<8; i++)
+  e0:	80 e0       	ldi	r24, 0x00	; 0
+void ascii2c(unsigned char iascii)
+{
+   unsigned char *pa, *pc;
+   unsigned char i, r, g, b;
+   pa = ascii8x8[iascii];
+   pc = c8x8;
+  e2:	a0 e0       	ldi	r26, 0x00	; 0
+  e4:	b5 e0       	ldi	r27, 0x05	; 5
+   r = 0x0f; g = 0x0f; b = 0x0f; // 밝기 조정 (너무 밝지 않게 설정)
+
+   for(i=0; i<8; i++)
+  e6:	95 c0       	rjmp	.+298    	; 0x212 <ascii2c+0x14a>
+   {
+      // 각 비트를 검사하여 색상 데이터(GRB) 채우기
+      if(*pa & 0x01) {*pc++ = g; *pc++ = r; *pc++ = b;} else {*pc++ = 0; *pc++ = 0; *pc++ = 0;}
+  e8:	90 81       	ld	r25, Z
+  ea:	90 ff       	sbrs	r25, 0
+  ec:	0a c0       	rjmp	.+20     	; 0x102 <ascii2c+0x3a>
+  ee:	9f e0       	ldi	r25, 0x0F	; 15
+  f0:	9c 93       	st	X, r25
+  f2:	11 96       	adiw	r26, 0x01	; 1
+  f4:	9c 93       	st	X, r25
+  f6:	11 97       	sbiw	r26, 0x01	; 1
+  f8:	ed 01       	movw	r28, r26
+  fa:	23 96       	adiw	r28, 0x03	; 3
+  fc:	12 96       	adiw	r26, 0x02	; 2
+  fe:	9c 93       	st	X, r25
+ 100:	08 c0       	rjmp	.+16     	; 0x112 <ascii2c+0x4a>
+ 102:	1c 92       	st	X, r1
+ 104:	11 96       	adiw	r26, 0x01	; 1
+ 106:	1c 92       	st	X, r1
+ 108:	11 97       	sbiw	r26, 0x01	; 1
+ 10a:	ed 01       	movw	r28, r26
+ 10c:	23 96       	adiw	r28, 0x03	; 3
+ 10e:	12 96       	adiw	r26, 0x02	; 2
+ 110:	1c 92       	st	X, r1
+      if(*pa & 0x02) {*pc++ = g; *pc++ = r; *pc++ = b;} else {*pc++ = 0; *pc++ = 0; *pc++ = 0;}
+ 112:	90 81       	ld	r25, Z
+ 114:	91 ff       	sbrs	r25, 1
+ 116:	07 c0       	rjmp	.+14     	; 0x126 <ascii2c+0x5e>
+ 118:	9f e0       	ldi	r25, 0x0F	; 15
+ 11a:	98 83       	st	Y, r25
+ 11c:	99 83       	std	Y+1, r25	; 0x01
+ 11e:	de 01       	movw	r26, r28
+ 120:	13 96       	adiw	r26, 0x03	; 3
+ 122:	9a 83       	std	Y+2, r25	; 0x02
+ 124:	05 c0       	rjmp	.+10     	; 0x130 <ascii2c+0x68>
+ 126:	18 82       	st	Y, r1
+ 128:	19 82       	std	Y+1, r1	; 0x01
+ 12a:	de 01       	movw	r26, r28
+ 12c:	13 96       	adiw	r26, 0x03	; 3
+ 12e:	1a 82       	std	Y+2, r1	; 0x02
+      if(*pa & 0x04) {*pc++ = g; *pc++ = r; *pc++ = b;} else {*pc++ = 0; *pc++ = 0; *pc++ = 0;}
+ 130:	90 81       	ld	r25, Z
+ 132:	92 ff       	sbrs	r25, 2
+ 134:	0a c0       	rjmp	.+20     	; 0x14a <ascii2c+0x82>
+ 136:	9f e0       	ldi	r25, 0x0F	; 15
+ 138:	9c 93       	st	X, r25
+ 13a:	11 96       	adiw	r26, 0x01	; 1
+ 13c:	9c 93       	st	X, r25
+ 13e:	11 97       	sbiw	r26, 0x01	; 1
+ 140:	ed 01       	movw	r28, r26
+ 142:	23 96       	adiw	r28, 0x03	; 3
+ 144:	12 96       	adiw	r26, 0x02	; 2
+ 146:	9c 93       	st	X, r25
+ 148:	08 c0       	rjmp	.+16     	; 0x15a <ascii2c+0x92>
+ 14a:	1c 92       	st	X, r1
+ 14c:	11 96       	adiw	r26, 0x01	; 1
+ 14e:	1c 92       	st	X, r1
+ 150:	11 97       	sbiw	r26, 0x01	; 1
+ 152:	ed 01       	movw	r28, r26
+ 154:	23 96       	adiw	r28, 0x03	; 3
+ 156:	12 96       	adiw	r26, 0x02	; 2
+ 158:	1c 92       	st	X, r1
+      if(*pa & 0x08) {*pc++ = g; *pc++ = r; *pc++ = b;} else {*pc++ = 0; *pc++ = 0; *pc++ = 0;}
+ 15a:	90 81       	ld	r25, Z
+ 15c:	93 ff       	sbrs	r25, 3
+ 15e:	07 c0       	rjmp	.+14     	; 0x16e <ascii2c+0xa6>
+ 160:	9f e0       	ldi	r25, 0x0F	; 15
+ 162:	98 83       	st	Y, r25
+ 164:	99 83       	std	Y+1, r25	; 0x01
+ 166:	de 01       	movw	r26, r28
+ 168:	13 96       	adiw	r26, 0x03	; 3
+ 16a:	9a 83       	std	Y+2, r25	; 0x02
+ 16c:	05 c0       	rjmp	.+10     	; 0x178 <ascii2c+0xb0>
+ 16e:	18 82       	st	Y, r1
+ 170:	19 82       	std	Y+1, r1	; 0x01
+ 172:	de 01       	movw	r26, r28
+ 174:	13 96       	adiw	r26, 0x03	; 3
+ 176:	1a 82       	std	Y+2, r1	; 0x02
+      if(*pa & 0x10) {*pc++ = g; *pc++ = r; *pc++ = b;} else {*pc++ = 0; *pc++ = 0; *pc++ = 0;}
+ 178:	90 81       	ld	r25, Z
+ 17a:	94 ff       	sbrs	r25, 4
+ 17c:	0a c0       	rjmp	.+20     	; 0x192 <ascii2c+0xca>
+ 17e:	9f e0       	ldi	r25, 0x0F	; 15
+ 180:	9c 93       	st	X, r25
+ 182:	11 96       	adiw	r26, 0x01	; 1
+ 184:	9c 93       	st	X, r25
+ 186:	11 97       	sbiw	r26, 0x01	; 1
+ 188:	ed 01       	movw	r28, r26
+ 18a:	23 96       	adiw	r28, 0x03	; 3
+ 18c:	12 96       	adiw	r26, 0x02	; 2
+ 18e:	9c 93       	st	X, r25
+ 190:	08 c0       	rjmp	.+16     	; 0x1a2 <ascii2c+0xda>
+ 192:	1c 92       	st	X, r1
+ 194:	11 96       	adiw	r26, 0x01	; 1
+ 196:	1c 92       	st	X, r1
+ 198:	11 97       	sbiw	r26, 0x01	; 1
+ 19a:	ed 01       	movw	r28, r26
+ 19c:	23 96       	adiw	r28, 0x03	; 3
+ 19e:	12 96       	adiw	r26, 0x02	; 2
+ 1a0:	1c 92       	st	X, r1
+      if(*pa & 0x20) {*pc++ = g; *pc++ = r; *pc++ = b;} else {*pc++ = 0; *pc++ = 0; *pc++ = 0;}
+ 1a2:	90 81       	ld	r25, Z
+ 1a4:	95 ff       	sbrs	r25, 5
+ 1a6:	07 c0       	rjmp	.+14     	; 0x1b6 <ascii2c+0xee>
+ 1a8:	9f e0       	ldi	r25, 0x0F	; 15
+ 1aa:	98 83       	st	Y, r25
+ 1ac:	99 83       	std	Y+1, r25	; 0x01
+ 1ae:	de 01       	movw	r26, r28
+ 1b0:	13 96       	adiw	r26, 0x03	; 3
+ 1b2:	9a 83       	std	Y+2, r25	; 0x02
+ 1b4:	05 c0       	rjmp	.+10     	; 0x1c0 <ascii2c+0xf8>
+ 1b6:	18 82       	st	Y, r1
+ 1b8:	19 82       	std	Y+1, r1	; 0x01
+ 1ba:	de 01       	movw	r26, r28
+ 1bc:	13 96       	adiw	r26, 0x03	; 3
+ 1be:	1a 82       	std	Y+2, r1	; 0x02
+      if(*pa & 0x40) {*pc++ = g; *pc++ = r; *pc++ = b;} else {*pc++ = 0; *pc++ = 0; *pc++ = 0;}
+ 1c0:	90 81       	ld	r25, Z
+ 1c2:	96 ff       	sbrs	r25, 6
+ 1c4:	0a c0       	rjmp	.+20     	; 0x1da <ascii2c+0x112>
+ 1c6:	9f e0       	ldi	r25, 0x0F	; 15
+ 1c8:	9c 93       	st	X, r25
+ 1ca:	11 96       	adiw	r26, 0x01	; 1
+ 1cc:	9c 93       	st	X, r25
+ 1ce:	11 97       	sbiw	r26, 0x01	; 1
+ 1d0:	ed 01       	movw	r28, r26
+ 1d2:	23 96       	adiw	r28, 0x03	; 3
+ 1d4:	12 96       	adiw	r26, 0x02	; 2
+ 1d6:	9c 93       	st	X, r25
+ 1d8:	08 c0       	rjmp	.+16     	; 0x1ea <ascii2c+0x122>
+ 1da:	1c 92       	st	X, r1
+ 1dc:	11 96       	adiw	r26, 0x01	; 1
+ 1de:	1c 92       	st	X, r1
+ 1e0:	11 97       	sbiw	r26, 0x01	; 1
+ 1e2:	ed 01       	movw	r28, r26
+ 1e4:	23 96       	adiw	r28, 0x03	; 3
+ 1e6:	12 96       	adiw	r26, 0x02	; 2
+ 1e8:	1c 92       	st	X, r1
+      if(*pa++ & 0x80) {*pc++ = g; *pc++ = r; *pc++ = b;} else {*pc++ = 0; *pc++ = 0; *pc++ = 0;}
+ 1ea:	9f 01       	movw	r18, r30
+ 1ec:	2f 5f       	subi	r18, 0xFF	; 255
+ 1ee:	3f 4f       	sbci	r19, 0xFF	; 255
+ 1f0:	90 81       	ld	r25, Z
+ 1f2:	99 23       	and	r25, r25
+ 1f4:	3c f4       	brge	.+14     	; 0x204 <ascii2c+0x13c>
+ 1f6:	9f e0       	ldi	r25, 0x0F	; 15
+ 1f8:	98 83       	st	Y, r25
+ 1fa:	99 83       	std	Y+1, r25	; 0x01
+ 1fc:	de 01       	movw	r26, r28
+ 1fe:	13 96       	adiw	r26, 0x03	; 3
+ 200:	9a 83       	std	Y+2, r25	; 0x02
+ 202:	05 c0       	rjmp	.+10     	; 0x20e <ascii2c+0x146>
+ 204:	18 82       	st	Y, r1
+ 206:	19 82       	std	Y+1, r1	; 0x01
+ 208:	de 01       	movw	r26, r28
+ 20a:	13 96       	adiw	r26, 0x03	; 3
+ 20c:	1a 82       	std	Y+2, r1	; 0x02
+   unsigned char i, r, g, b;
+   pa = ascii8x8[iascii];
+   pc = c8x8;
+   r = 0x0f; g = 0x0f; b = 0x0f; // 밝기 조정 (너무 밝지 않게 설정)
+
+   for(i=0; i<8; i++)
+ 20e:	8f 5f       	subi	r24, 0xFF	; 255
+      if(*pa & 0x04) {*pc++ = g; *pc++ = r; *pc++ = b;} else {*pc++ = 0; *pc++ = 0; *pc++ = 0;}
+      if(*pa & 0x08) {*pc++ = g; *pc++ = r; *pc++ = b;} else {*pc++ = 0; *pc++ = 0; *pc++ = 0;}
+      if(*pa & 0x10) {*pc++ = g; *pc++ = r; *pc++ = b;} else {*pc++ = 0; *pc++ = 0; *pc++ = 0;}
+      if(*pa & 0x20) {*pc++ = g; *pc++ = r; *pc++ = b;} else {*pc++ = 0; *pc++ = 0; *pc++ = 0;}
+      if(*pa & 0x40) {*pc++ = g; *pc++ = r; *pc++ = b;} else {*pc++ = 0; *pc++ = 0; *pc++ = 0;}
+      if(*pa++ & 0x80) {*pc++ = g; *pc++ = r; *pc++ = b;} else {*pc++ = 0; *pc++ = 0; *pc++ = 0;}
+ 210:	f9 01       	movw	r30, r18
+   unsigned char i, r, g, b;
+   pa = ascii8x8[iascii];
+   pc = c8x8;
+   r = 0x0f; g = 0x0f; b = 0x0f; // 밝기 조정 (너무 밝지 않게 설정)
+
+   for(i=0; i<8; i++)
+ 212:	88 30       	cpi	r24, 0x08	; 8
+ 214:	08 f4       	brcc	.+2      	; 0x218 <ascii2c+0x150>
+ 216:	68 cf       	rjmp	.-304    	; 0xe8 <ascii2c+0x20>
+      if(*pa & 0x10) {*pc++ = g; *pc++ = r; *pc++ = b;} else {*pc++ = 0; *pc++ = 0; *pc++ = 0;}
+      if(*pa & 0x20) {*pc++ = g; *pc++ = r; *pc++ = b;} else {*pc++ = 0; *pc++ = 0; *pc++ = 0;}
+      if(*pa & 0x40) {*pc++ = g; *pc++ = r; *pc++ = b;} else {*pc++ = 0; *pc++ = 0; *pc++ = 0;}
+      if(*pa++ & 0x80) {*pc++ = g; *pc++ = r; *pc++ = b;} else {*pc++ = 0; *pc++ = 0; *pc++ = 0;}
+   }
+}
+ 218:	df 91       	pop	r29
+ 21a:	cf 91       	pop	r28
+ 21c:	08 95       	ret
+
+0000021e <T1>:
+void T1(void) // H:0.85us L:0.45us 1.25us+_600ns 20+_9 instructions
+{
+   WC1;
+ 21e:	81 e0       	ldi	r24, 0x01	; 1
+ 220:	85 bb       	out	0x15, r24	; 21
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 222:	84 e0       	ldi	r24, 0x04	; 4
+ 224:	8a 95       	dec	r24
+ 226:	f1 f7       	brne	.-4      	; 0x224 <T1+0x6>
+ 228:	00 00       	nop
+   _delay_us(0.8); // 0.85
+   WC0;
+ 22a:	15 ba       	out	0x15, r1	; 21
+ 22c:	00 c0       	rjmp	.+0      	; 0x22e <T1+0x10>
+ 22e:	00 c0       	rjmp	.+0      	; 0x230 <T1+0x12>
+ 230:	00 00       	nop
+ 232:	08 95       	ret
+
+00000234 <T0>:
+   _delay_us(0.3); // 0.4
+}
+
+void T0(void) // H0.4us L:0.85us
+{
+   WC1;
+ 234:	81 e0       	ldi	r24, 0x01	; 1
+ 236:	85 bb       	out	0x15, r24	; 21
+ 238:	00 c0       	rjmp	.+0      	; 0x23a <T0+0x6>
+ 23a:	00 c0       	rjmp	.+0      	; 0x23c <T0+0x8>
+ 23c:	00 00       	nop
+   _delay_us(0.3);
+   WC0;
+ 23e:	15 ba       	out	0x15, r1	; 21
+ 240:	84 e0       	ldi	r24, 0x04	; 4
+ 242:	8a 95       	dec	r24
+ 244:	f1 f7       	brne	.-4      	; 0x242 <T0+0xe>
+ 246:	00 00       	nop
+ 248:	08 95       	ret
+
+0000024a <TL>:
+   _delay_us(0.8);
+}
+
+void TL(void) // Transmit Latch command L:50us
+{
+   WC0;
+ 24a:	15 ba       	out	0x15, r1	; 21
+ 24c:	8f ee       	ldi	r24, 0xEF	; 239
+ 24e:	90 e0       	ldi	r25, 0x00	; 0
+ 250:	01 97       	sbiw	r24, 0x01	; 1
+ 252:	f1 f7       	brne	.-4      	; 0x250 <TL+0x6>
+ 254:	00 c0       	rjmp	.+0      	; 0x256 <TL+0xc>
+ 256:	00 00       	nop
+ 258:	08 95       	ret
+
+0000025a <TByte>:
+   _delay_us(60);
+}
+
+void TByte(unsigned char b) // MSB -> LSB
+{
+ 25a:	cf 93       	push	r28
+ 25c:	c8 2f       	mov	r28, r24
+   if(b & 0x80) T1(); else T0();
+ 25e:	88 23       	and	r24, r24
+ 260:	14 f4       	brge	.+4      	; 0x266 <TByte+0xc>
+ 262:	dd df       	rcall	.-70     	; 0x21e <T1>
+ 264:	01 c0       	rjmp	.+2      	; 0x268 <TByte+0xe>
+ 266:	e6 df       	rcall	.-52     	; 0x234 <T0>
+ 268:	c6 ff       	sbrs	r28, 6
+   if(b & 0x40) T1(); else T0();
+ 26a:	02 c0       	rjmp	.+4      	; 0x270 <TByte+0x16>
+ 26c:	d8 df       	rcall	.-80     	; 0x21e <T1>
+ 26e:	01 c0       	rjmp	.+2      	; 0x272 <TByte+0x18>
+ 270:	e1 df       	rcall	.-62     	; 0x234 <T0>
+   if(b & 0x20) T1(); else T0();
+ 272:	c5 ff       	sbrs	r28, 5
+ 274:	02 c0       	rjmp	.+4      	; 0x27a <TByte+0x20>
+ 276:	d3 df       	rcall	.-90     	; 0x21e <T1>
+ 278:	01 c0       	rjmp	.+2      	; 0x27c <TByte+0x22>
+   if(b & 0x10) T1(); else T0();
+ 27a:	dc df       	rcall	.-72     	; 0x234 <T0>
+ 27c:	c4 ff       	sbrs	r28, 4
+ 27e:	02 c0       	rjmp	.+4      	; 0x284 <TByte+0x2a>
+ 280:	ce df       	rcall	.-100    	; 0x21e <T1>
+   if(b & 0x08) T1(); else T0();
+ 282:	01 c0       	rjmp	.+2      	; 0x286 <TByte+0x2c>
+ 284:	d7 df       	rcall	.-82     	; 0x234 <T0>
+ 286:	c3 ff       	sbrs	r28, 3
+ 288:	02 c0       	rjmp	.+4      	; 0x28e <TByte+0x34>
+   if(b & 0x04) T1(); else T0();
+ 28a:	c9 df       	rcall	.-110    	; 0x21e <T1>
+ 28c:	01 c0       	rjmp	.+2      	; 0x290 <TByte+0x36>
+ 28e:	d2 df       	rcall	.-92     	; 0x234 <T0>
+ 290:	c2 ff       	sbrs	r28, 2
+ 292:	02 c0       	rjmp	.+4      	; 0x298 <TByte+0x3e>
+ 294:	c4 df       	rcall	.-120    	; 0x21e <T1>
+   if(b & 0x02) T1(); else T0();
+ 296:	01 c0       	rjmp	.+2      	; 0x29a <TByte+0x40>
+ 298:	cd df       	rcall	.-102    	; 0x234 <T0>
+ 29a:	c1 ff       	sbrs	r28, 1
+ 29c:	02 c0       	rjmp	.+4      	; 0x2a2 <TByte+0x48>
+ 29e:	bf df       	rcall	.-130    	; 0x21e <T1>
+ 2a0:	01 c0       	rjmp	.+2      	; 0x2a4 <TByte+0x4a>
+ 2a2:	c8 df       	rcall	.-112    	; 0x234 <T0>
+   if(b & 0x01) T1(); else T0();
+ 2a4:	c0 ff       	sbrs	r28, 0
+ 2a6:	02 c0       	rjmp	.+4      	; 0x2ac <TByte+0x52>
+ 2a8:	ba df       	rcall	.-140    	; 0x21e <T1>
+ 2aa:	01 c0       	rjmp	.+2      	; 0x2ae <TByte+0x54>
+ 2ac:	c3 df       	rcall	.-122    	; 0x234 <T0>
+ 2ae:	cf 91       	pop	r28
+ 2b0:	08 95       	ret
+
+000002b2 <disp_c>:
+}
+ 2b2:	0f 93       	push	r16
+ 2b4:	1f 93       	push	r17
+void disp_c(void)
+{
+ 2b6:	cf 93       	push	r28
+   unsigned char i, *p;
+   p = c8x8;
+ 2b8:	e0 e0       	ldi	r30, 0x00	; 0
+ 2ba:	f5 e0       	ldi	r31, 0x05	; 5
+   for(i=0; i<192; i++)
+ 2bc:	c0 e0       	ldi	r28, 0x00	; 0
+ 2be:	07 c0       	rjmp	.+14     	; 0x2ce <disp_c+0x1c>
+   {
+      TByte(*p++); // TByte 함수는 이전 단계에서 정의됨
+ 2c0:	8f 01       	movw	r16, r30
+ 2c2:	0f 5f       	subi	r16, 0xFF	; 255
+ 2c4:	1f 4f       	sbci	r17, 0xFF	; 255
+ 2c6:	80 81       	ld	r24, Z
+ 2c8:	c8 df       	rcall	.-112    	; 0x25a <TByte>
+}
+void disp_c(void)
+{
+   unsigned char i, *p;
+   p = c8x8;
+   for(i=0; i<192; i++)
+ 2ca:	cf 5f       	subi	r28, 0xFF	; 255
+   {
+      TByte(*p++); // TByte 함수는 이전 단계에서 정의됨
+ 2cc:	f8 01       	movw	r30, r16
+}
+void disp_c(void)
+{
+   unsigned char i, *p;
+   p = c8x8;
+   for(i=0; i<192; i++)
+ 2ce:	c0 3c       	cpi	r28, 0xC0	; 192
+ 2d0:	b8 f3       	brcs	.-18     	; 0x2c0 <disp_c+0xe>
+   {
+      TByte(*p++); // TByte 함수는 이전 단계에서 정의됨
+   }
+}
+ 2d2:	cf 91       	pop	r28
+ 2d4:	1f 91       	pop	r17
+ 2d6:	0f 91       	pop	r16
+ 2d8:	08 95       	ret
+
+000002da <test_dispc>:
+
+void test_dispc(void)
+{
+ 2da:	cf 93       	push	r28
+   unsigned char i;
+   for(i=0x21; i<128; i++) // ASCII 문자 순회
+ 2dc:	c1 e2       	ldi	r28, 0x21	; 33
+ 2de:	0e c0       	rjmp	.+28     	; 0x2fc <test_dispc+0x22>
+   {
+      TL(); // Reset 신호
+ 2e0:	b4 df       	rcall	.-152    	; 0x24a <TL>
+      ascii2c(i); // 폰트 데이터를 LED 데이터로 변환
+ 2e2:	8c 2f       	mov	r24, r28
+      disp_c();   // LED로 데이터 전송
+ 2e4:	f1 de       	rcall	.-542    	; 0xc8 <ascii2c>
+ 2e6:	e5 df       	rcall	.-54     	; 0x2b2 <disp_c>
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 2e8:	2f ef       	ldi	r18, 0xFF	; 255
+ 2ea:	83 ed       	ldi	r24, 0xD3	; 211
+ 2ec:	90 e3       	ldi	r25, 0x30	; 48
+ 2ee:	21 50       	subi	r18, 0x01	; 1
+ 2f0:	80 40       	sbci	r24, 0x00	; 0
+ 2f2:	90 40       	sbci	r25, 0x00	; 0
+ 2f4:	e1 f7       	brne	.-8      	; 0x2ee <test_dispc+0x14>
+ 2f6:	00 c0       	rjmp	.+0      	; 0x2f8 <test_dispc+0x1e>
+ 2f8:	00 00       	nop
+}
+
+void test_dispc(void)
+{
+   unsigned char i;
+   for(i=0x21; i<128; i++) // ASCII 문자 순회
+ 2fa:	cf 5f       	subi	r28, 0xFF	; 255
+ 2fc:	cc 23       	and	r28, r28
+ 2fe:	84 f7       	brge	.-32     	; 0x2e0 <test_dispc+0x6>
+      TL(); // Reset 신호
+      ascii2c(i); // 폰트 데이터를 LED 데이터로 변환
+      disp_c();   // LED로 데이터 전송
+      _delay_ms(1000);
+   }
+}
+ 300:	cf 91       	pop	r28
+ 302:	08 95       	ret
+
+00000304 <main>:
+
+int main(void)
+{
+   DDRC = 0xff; // 포트 C 출력 설정
+ 304:	8f ef       	ldi	r24, 0xFF	; 255
+ 306:	84 bb       	out	0x14, r24	; 20
+   while(1)
+   {
+      test_dispc();
+ 308:	e8 df       	rcall	.-48     	; 0x2da <test_dispc>
+ 30a:	fe cf       	rjmp	.-4      	; 0x308 <main+0x4>
+
+0000030c <_exit>:
+ 30c:	f8 94       	cli
+
+0000030e <__stop_program>:
+ 30e:	ff cf       	rjmp	.-2      	; 0x30e <__stop_program>
