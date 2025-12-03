@@ -640,13 +640,13 @@ END GROUP
  .debug_frame   0x00000000       0x98 ffnd_number.o
  .debug_frame   0x00000098      0x120 TWI_ex1.o
 
-.debug_str      0x00000000      0x51d
+.debug_str      0x00000000      0x572
  *(.debug_str)
  .debug_str     0x00000000      0x27d C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega128/avr51/crtatmega128.o
  .debug_str     0x0000027d      0x202 ffnd_number.o
                                 0x243 (size before relaxing)
- .debug_str     0x0000047f       0x9e TWI_ex1.o
-                                0x23b (size before relaxing)
+ .debug_str     0x0000047f       0xf3 TWI_ex1.o
+                                0x244 (size before relaxing)
 
 .debug_loc      0x00000000      0x6e5
  *(.debug_loc)

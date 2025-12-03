@@ -1,5 +1,5 @@
 
-DCMOTOR_ex1.elf:     file format elf32-avr
+GccApplication2.elf:     file format elf32-avr
 
 Sections:
 Idx Name          Size      VMA       LMA       File off  Algn
@@ -17,15 +17,15 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING
   6 .debug_abbrev 000008c1  00000000  00000000  00001949  2**0
                   CONTENTS, READONLY, DEBUGGING
-  7 .debug_line   00000695  00000000  00000000  0000220a  2**0
+  7 .debug_line   0000068e  00000000  00000000  0000220a  2**0
                   CONTENTS, READONLY, DEBUGGING
-  8 .debug_frame  000000e4  00000000  00000000  000028a0  2**2
+  8 .debug_frame  000000e4  00000000  00000000  00002898  2**2
                   CONTENTS, READONLY, DEBUGGING
-  9 .debug_str    00000493  00000000  00000000  00002984  2**0
+  9 .debug_str    00000490  00000000  00000000  0000297c  2**0
                   CONTENTS, READONLY, DEBUGGING
- 10 .debug_loc    00000874  00000000  00000000  00002e17  2**0
+ 10 .debug_loc    00000874  00000000  00000000  00002e0c  2**0
                   CONTENTS, READONLY, DEBUGGING
- 11 .debug_ranges 00000038  00000000  00000000  0000368b  2**0
+ 11 .debug_ranges 00000038  00000000  00000000  00003680  2**0
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
